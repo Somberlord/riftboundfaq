@@ -1,5 +1,6 @@
 services:
   web: 
+    pull_policy: build
     build:
       context: app
       target: builder
