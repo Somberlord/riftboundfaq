@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}   
+<h2>Combat</h2>
+<ul>
+  <li>Combat occurs when an <strong>already controlled</strong> battlefield (BF) is contested.</li>
+  <li>Combat can only occur when the chain is <strong>empty</strong>. When a unit contests a BF while there is a chain, combat is <strong>pending</strong> until the chain is empty.</li>
+  <li>Only <strong>one</strong> combat can occur at a time. If two combats are pending, the turn player decides which combat to resolve first.</li>
+  <li>Combat can only occur between units of <strong>exactly</strong> two players.
+    <ul>
+      <li>Any attempt from a third player to move a unit into an existing combat is illegal.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Combat consists of three steps</h3>
+
+<h4>The Showdown Step</h4>
+<p>A <a href="https://discord.com/channels/1314690307811577887/1384868482268528690">Showdown</a> occurs.</p>
+
+<h4>The Damage Step</h4>
+<ul>
+  <li>Sum the <img src="static/might.webp" style="height:1em; vertical-align:middle;" alt="might"> of attacking and defending units.</li>
+  <li>Distribute damage
+    <ul>
+      <li>Attacker announces damage distribution <strong>first</strong>, then defender.</li>
+      <li>All <strong>requirements and restrictions</strong> must be met
+        <ul>
+          <li>For example, units with <strong>Tank</strong> must be assigned damage first.</li>
+          <li>If multiple units have the <strong>same restriction</strong>, the player assigning damage can choose the order.</li>
+        </ul>
+      </li>
+      <li>A unit has to be assigned <strong>lethal damage</strong> before a player can assign damage to <strong>another</strong> unit.</li>
+      <li>Players cannot <strong>over assign</strong> damage.</li>
+      <li>Any <strong>excess damage</strong> will be assigned to the <strong>last unit</strong>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>The Resolution Step</h4>
+<ul>
+  <li>Remove units with <strong>lethal damage</strong>.</li>
+  <li>If <strong>both</strong> attacking and defending units remain at the BF, attacking units are <strong>recalled</strong> to base.</li>
+  <li>If <strong>only</strong> attacking units remain, a point is <a href="https://discord.com/channels/1314690307811577887/1384234770095149076">scored</a> and the BF is <strong>conquered</strong>.</li>
+  <li>Contested status is cleared from the BF.</li>
+  <li>Damage is cleared from all units at all locations.</li>
+  <li>Cleanup is performed.</li>
+</ul>
+
+<p><em>Edge Case:</em> It is possible to score as defender if a unit moved to the BF during an open showdown (e.g. with Zenith Blade). For this case, see <a href="https://discord.com/channels/1314690307811577887/1380255604148277369/1382030329132355826">here</a>.</p>
+
+<h3>Relevant CDR Rules:</h3>
+<p><em>545. Showdown<br>620. Combat</em></p>
+
+{% endblock %}

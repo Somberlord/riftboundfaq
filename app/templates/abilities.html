@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}   
+<h2>Abilities</h2>
+<p>Cards in Riftbound can have many different <strong>abilities</strong>. All abilities belong to one of <strong>four categories</strong>:</p>
+
+<h3>Passive Abilities</h3>
+<ul>
+  <li>Statements of <strong>fact</strong></li>
+  <li>Can be conditional, recognized by the words <strong>While</strong> or <strong>If</strong></li>
+  <li>Permanents are affected by passive abilities as soon as they enter the board
+    <ul>
+      <li>A 4 <img src="static/might.webp" style="height:1em; vertical-align:middle;" alt="might"> unit played onto <strong>Trifarian War Camp</strong> counts as Mighty for <strong>Relentless Storm</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Activated Abilities</h3>
+<ul>
+  <li>Can be recognized by the presence of a <strong>colon</strong> ( ":" )</li>
+  <li>Text before the colon indicates a <strong>cost</strong> that has to be paid to activate an ability.</li>
+  <li>Text after the colon indicates the <strong>effect</strong> of the ability.</li>
+  <li>Can only be activated on <strong>your turn</strong>, outside of a <strong>showdown</strong>, when the chain is <strong>empty</strong></li>
+  <li>When the cost is paid, they are put on the <strong>chain</strong></li>
+  <li>Other players can <strong>react</strong>
+    <ul>
+      <li>Abilities that <strong>add</strong> resources cannot be reacted to</li>
+    </ul>
+  </li>
+  <li>Once every player has passed, the ability <strong>resolves</strong></li>
+</ul>
+
+<h3>Triggered Abilities</h3>
+<ul>
+  <li>Happen when a certain <strong>condition</strong> is met</li>
+  <li>Can be recognized by the words <strong>when</strong> or <strong>at</strong></li>
+  <li>When the condition is met, <strong>triggered abilities</strong> are put on the <strong>chain</strong></li>
+  <li>Other people can <strong>react</strong></li>
+  <li>Can trigger on <strong>any turn</strong>, during <strong>any game state</strong></li>
+  <li>Multiple abilities can trigger at the same time
+    <ul>
+      <li>The <strong>controller</strong> of the triggered abilities decides the <strong>order</strong> of their triggers</li>
+      <li>If abilities from <strong>different players</strong> trigger, they are put on the chain in <strong>turn order</strong>, starting with the <strong>turn player</strong></li>
+    </ul>
+  </li>
+</ul>
+<p>Triggered abilities are <strong>not optional</strong>. They trigger whenever their condition is met.</p>
+
+<h3>Replacement Effects</h3>
+<ul>
+  <li>Can alter the <strong>execution</strong> of other game effects</li>
+  <li>Can be recognized by the word <strong>instead</strong></li>
+  <li>If multiple replacement effects apply to the <strong>same event</strong>, the controller of the <strong>relevant object</strong> can choose the order
+    <ul>
+      <li>If a player controls both <strong>Zhonyas</strong> and <strong>Sett, The Boss</strong>, they can choose which effect to use when a unit would die</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Relevant CRD Rules:</h3>
+<p><em>563. Abilities</em></p>
+
+{% endblock %}
