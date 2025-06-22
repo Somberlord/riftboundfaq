@@ -20,7 +20,11 @@ def get_pages():
     files = os.listdir(base_dir)
     for file in files:
         filename = Path(file).stem
-        if filename != 'base':
+        if filename == 'home':
+            result.insert(0, filename)
+        elif filename != 'base':
             result.append(filename)
+        
+        
     return result
     
