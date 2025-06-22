@@ -9,7 +9,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 COPY . /app
 
-ENV FLASK_APP=riftboundfaq.py
+ENV FLASK_APP=riftboundfaq
 ENTRYPOINT ["flask"]
 CMD ["run"]
 
