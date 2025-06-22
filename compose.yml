@@ -7,8 +7,6 @@ services:
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
-    ports:
-      - '5000:5000'
     networks:
       riftbound:
         
