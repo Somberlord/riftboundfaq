@@ -15,5 +15,4 @@ services:
 
 networks:
    riftbound:
-     external: true
      
