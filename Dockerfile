@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1.4
 FROM python:slim
+WORKDIR /src
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
