@@ -11,8 +11,9 @@ services:
       - '5000:5000'
     networks:
       riftbound:
-        external: true
+        
 
 networks:
    riftbound:
+     external: true
      
