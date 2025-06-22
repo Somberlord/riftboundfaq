@@ -1,6 +1,8 @@
 services:
   web: 
     pull_policy: build
+    build:
+      context: ./
     # flask requires SIGINT to stop gracefully
     # (default stop signal from Compose is SIGTERM)
     stop_signal: SIGINT
