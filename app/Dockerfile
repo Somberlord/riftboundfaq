@@ -1,13 +1,13 @@
 # syntax=docker/dockerfile:1.4
 FROM --platform=$BUILDPLATFORM python:3.12-alpine AS builder
 
-WORKDIR /app
+WORKDIR /src
 
-COPY requirements.txt /app
+COPY requirements.txt /src
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip3 install -r requirements.txt
 
-COPY . /app
+COPY .. /src
 
 ENV FLASK_APP=riftboundfaq
 ENTRYPOINT ["flask"]
