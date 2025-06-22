@@ -1,16 +1,16 @@
 # syntax=docker/dockerfile:1.4
-FROM --platform=$BUILDPLATFORM python:3.12-alpine AS builder
+FROM python:slim
 
-WORKDIR /src
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+RUN pip install gunicorn
 
-COPY requirements.txt /src
-RUN --mount=type=cache,target=/root/.cache/pip \
-    pip3 install -r requirements.txt
+COPY app app
+COPY riftboundfaq.py boot.sh ./
+RUN chmod a+x boot.sh
 
-COPY .. /src
+ENV FLASK_APP riftboundfaq.py
+RUN flask translate compile
 
-ENV FLASK_APP=riftboundfaq
-ENTRYPOINT ["flask"]
-CMD ["run"]
-
-FROM builder as dev-envs
+EXPOSE 5000
+ENTRYPOINT ["./boot.sh"]
