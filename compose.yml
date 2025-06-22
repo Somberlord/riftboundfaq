@@ -1,6 +1,6 @@
 services:
-  name: riftboundfaq
   web: 
+    container_name: riftboundfaq
     pull_policy: build
     build:
       context: ./
