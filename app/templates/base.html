@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" href="static/favicon.ico" />
+  <script defer src="static/script.js"></script>
+    <style>
+    .sidebar {
+      min-height: 100vh;
+      background: #343a40;
+    }
+    .sidebar a {
+      color: white;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background: #495057;
+    }
+  </style>
+</head>
+<body>
+  <!-- Bouton visible sur mobile -->
+  <button class="btn btn-primary d-md-none m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+    ☰
+  </button>
+
+    <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar visible à partir de md -->
+      <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {% for entry in navlist %}
+            <li class="nav-item"><a href="{{ entry }}">{{ entry.title() }}</a></li>
+            {% endfor %}
+        </ul>
+      </nav>
+
+      <main class="col-md-9 col-lg-10 p-4">
+      <h1>Riftbound Community FAQ</h1>
+      <!-- Contenu principal -->
+      {% block content %}{% endblock %}
+      </main>
+    </div>
+  </div>
+
+  <!-- Offcanvas Sidebar pour mobile -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body sidebar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {% for entry in navlist %}
+            <li class="nav-item"><a href="{{ entry }}">{{ entry.title() }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
