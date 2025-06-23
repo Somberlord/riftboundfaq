@@ -1,0 +1,82 @@
+/* Custom styles for Riftbound FAQ */
+
+.sidebar {
+  min-height: 100vh;
+  background: #343a40;
+}
+.sidebar a {
+  color: white;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  background: #495057;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .sidebar {
+  background: #111112 !important;
+}
+body.dark-mode .sidebar a {
+  color: #e0e0e0 !important;
+}
+body.dark-mode .sidebar a:hover {
+  background: #23272b !important;
+}
+body.dark-mode main {
+  background: #23272b !important;
+  color: #e0e0e0 !important;
+}
+body.dark-mode .btn-primary {
+  background: #e0e0e0 !important;
+  border-color: #ccc !important;
+  color: #23272b !important;
+}
+body.dark-mode .btn-secondary {
+  background: #fff !important;
+  color: #23272b !important;
+}
+
+/* Light mode styles for toggle */
+body.light-mode {
+  background: #f8f9fa !important;
+  color: #23272b !important;
+}
+body.light-mode .sidebar {
+  background: #e9ecef !important;
+}
+body.light-mode .sidebar a {
+  color: #23272b !important;
+}
+body.light-mode .sidebar a:hover {
+  background: #dee2e6 !important;
+}
+body.light-mode main {
+  background: #fff !important;
+  color: #23272b !important;
+}
+body.light-mode .btn-primary {
+  background: #444 !important;
+  border-color: #222 !important;
+}
+body.light-mode .btn-secondary {
+  background: #222 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Themed list styles for dark and light mode */
+body.dark-mode .themed-list .list-group-item {
+  background-color: #181a1b !important;
+  color: #e0e0e0 !important;
+  border-color: #23272b !important;
+}
+body.light-mode .themed-list .list-group-item {
+  background-color: #fff !important;
+  color: #23272b !important;
+  border-color: #e9ecef !important;
+}
