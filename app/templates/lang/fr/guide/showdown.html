@@ -1,0 +1,55 @@
+{% extends "lang/fr/base.html" %}
+
+{% block content %}
+<div class="container my-4 themed-list-container">
+  <h2 class="mb-3">Showdown</h2>
+
+  <p>Showdown occurs when a battlefield (BF) becomes contested</p>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">If the BF is uncontrolled, an open showdown without combat occurs</li>
+    <li class="list-group-item">If the BF is controlled by <strong>another player</strong>, <a href="https://discord.com/channels/1314690307811577887/1384871668429623388">Combat</a> occurs with showdown as a part of it</li>
+    <li class="list-group-item">If the showdown is part of combat, the <strong>attacker</strong> and <strong>defender</strong> are the relevant players
+      <ul class="list-group themed-list mt-2">
+        <li class="list-group-item">Others may become relevant if <strong>triggers</strong> they control happen during showdown or if they are <strong>invited</strong> by a relevant player</li>
+        <li class="list-group-item">The attacker is the controller of the unit that <strong>applied the contested status</strong> to the BF</li>
+      </ul>
+    </li>
+    <li class="list-group-item">If the showdown is not part of combat, <strong>all players</strong> are relevant players</li>
+  </ul>
+
+  <p><em>Visualisation of Showdown:</em> <a href="https://discord.com/channels/1314690307811577887/1384868482268528690/1385730020168699944">Link</a></p>
+
+  <p>If the showdown is part of <strong>combat</strong>, it may begin with an <strong>initial chain</strong>:</p>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">"When I attack" triggers are put on the chain <strong>first</strong></li>
+    <li class="list-group-item">"When I defend" triggers are put <strong>on top</strong></li>
+    <li class="list-group-item">Players may react</li>
+  </ul>
+
+  <p>After the initial chain is resolved, focus goes to the player that contested the BF. A player with focus may do one of the following things:</p>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">Play an action or reaction spell</li>
+    <li class="list-group-item">Activate legally timed <strong>abilities</strong>
+      <ul class="list-group themed-list mt-2">
+        <li class="list-group-item">Cards or abilities will start a <strong>chain</strong>, at the end of which focus will pass to the next relevant player</li>
+      </ul>
+    </li>
+    <li class="list-group-item">Invite players to act
+      <ul class="list-group themed-list mt-2">
+        <li class="list-group-item">Invitations may be <strong>refused</strong></li>
+        <li class="list-group-item">If accepted, the invited player gains focus and <strong>must</strong> play a spell or activate an ability <strong>right away</strong></li>
+      </ul>
+    </li>
+    <li class="list-group-item">Pass focus</li>
+  </ul>
+
+  <p>When all relevant players have <strong>passed</strong> in succession, showdown ends and a <strong>cleanup</strong> occurs.  
+  If there was no combat and the unit is still at the BF, it is <strong>conquered</strong></p>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">If the player has already scored a point on that BF <strong>this turn</strong> (for example by <strong>holding</strong> it), the BF is <strong>not</strong> conquered again. No point is awarded and "When you conquer" triggers do not trigger.</li>
+  </ul>
+
+  <h3>Relevant CRD Rules:</h3>
+  <p><em>528. Relevant Players<br>545. Showdown<br>630.1. Conquering</em></p>
+</div>
+{% endblock %}

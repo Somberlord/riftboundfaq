@@ -1,0 +1,24 @@
+{% extends "lang/fr/base.html" %}
+
+{% block content %}  
+<div class="container my-4 themed-list-container">
+  <h2 class="mb-3">Energy &amp; Power</h2>
+  <p>There are 2 Resources in Riftbound: <strong>Energy</strong> &amp; <strong>Power</strong></p>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item"><strong>Energy</strong> is represented by Numerical Values, and is color agnostic : <img class="might-icon" src="/static/images/1energy.webp" data-light="/static/images/1energy.webp" data-dark="/static/images/1energy_darkmode.webp" alt="1 Energy" style="height:1em; vertical-align:middle;"></li>
+    <li class="list-group-item"><strong>Power</strong>, which is represented by the Domain symbols and is color specific : <img src="/static/images/furypower.webp"alt="Fury Power" style="height:1em; vertical-align:middle;"></li>
+  </ul>
+
+  <p>The simplest and most common way to generate these resources is with your <strong>Runes</strong>. You <img class="might-icon" src="/static/images/exhaust.webp" data-light="/static/images/exhaust.webp" data-dark="/static/images/exhaust_darkmode.webp" alt="Exhaust" style="height:1em; vertical-align:middle;"> a <strong>Rune</strong> to generate <strong>Energy</strong>, and you <strong>Recycle</strong> a <strong>Rune</strong> to generate <strong>Power</strong>.</p>
+
+  <p>Both resources can also be created by other abilities and effects, such as exhausting a Seal for <strong>Power</strong>.</p>
+
+  <p>Whenever you generate either resource, they go into a virtual pool that can be used to pay for Costs of the appropriate type. That pool doesn't empty until the end of the turn, and at the end of the draw phase.</p>
+
+  <p>Note that some cards and effects can cost <em>both</em> <strong>Energy</strong> and <strong>Power</strong>.</p>
+
+  <h3 class="mt-4 mb-2">Relevant CRD Rules:</h3>
+  <p><em>130. Cost<br>153. Runes<br>157.2. Runes abilities<br>158. Rune Pools<br>605. Add</em></p>
+</div>
+
+{% endblock %}
