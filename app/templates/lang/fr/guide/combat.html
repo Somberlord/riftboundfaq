@@ -1,0 +1,56 @@
+{% extends "lang/fr/base.html" %}
+
+{% block content %}
+<div class="container my-4 themed-list-container">
+  <h2 class="mb-3">Combat</h2>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">Combat occurs when an <strong>already controlled</strong> battlefield (BF) is contested.</li>
+    <li class="list-group-item">Combat can only occur when the chain is <strong>empty</strong>. When a unit contests a BF while there is a chain, combat is <strong>pending</strong> until the chain is empty.</li>
+    <li class="list-group-item">Only <strong>one</strong> combat can occur at a time. If two combats are pending, the turn player decides which combat to resolve first.</li>
+    <li class="list-group-item">Combat can only occur between units of <strong>exactly</strong> two players.
+      <ul class="list-group themed-list mt-2">
+        <li class="list-group-item">Any attempt from a third player to move a unit into an existing combat is illegal.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3 class="mt-4 mb-2">Combat consists of three steps</h3>
+
+  <h4 class="mt-5 mb-1">The Showdown Step</h4>
+  <p>A <a href="/showdown">Showdown</a> occurs.</p>
+
+  <h4 class="mt-5 mb-1">The Damage Step</h4>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">Sum the <img class="might-icon" src="static/images/might.webp" data-light="static/images/might.webp" data-dark="static/images/might_darkmode.webp" style="height:1em; vertical-align:middle;" alt="might"> of attacking and defending units.</li>
+    <li class="list-group-item">Distribute damage
+      <ul class="list-group themed-list mt-2">
+        <li class="list-group-item">Attacker announces damage distribution <strong>first</strong>, then defender.</li>
+        <li class="list-group-item">All <strong>requirements and restrictions</strong> must be met
+          <ul class="list-group themed-list mt-1">
+            <li class="list-group-item">For example, units with <strong>Tank</strong> must be assigned damage first.</li>
+            <li class="list-group-item">If multiple units have the <strong>same restriction</strong>, the player assigning damage can choose the order.</li>
+          </ul>
+        </li>
+        <li class="list-group-item">A unit has to be assigned <strong>lethal damage</strong> before a player can assign damage to <strong>another</strong> unit.</li>
+        <li class="list-group-item">Players cannot <strong>over assign</strong> damage.</li>
+        <li class="list-group-item">Any <strong>excess damage</strong> will be assigned to the <strong>last unit</strong>.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4 class="mt-5 mb-1">The Resolution Step</h4>
+  <ul class="list-group themed-list mb-3">
+    <li class="list-group-item">Remove units with <strong>lethal damage</strong>.</li>
+    <li class="list-group-item">If <strong>both</strong> attacking and defending units remain at the BF, attacking units are <strong>recalled</strong> to base.</li>
+    <li class="list-group-item">If <strong>only</strong> attacking units remain, a point is <a href="/scoring">scored</a> and the BF is <strong>conquered</strong>.</li>
+    <li class="list-group-item">Contested status is cleared from the BF.</li>
+    <li class="list-group-item">Damage is cleared from all units at all locations.</li>
+    <li class="list-group-item">Cleanup is performed.</li>
+  </ul>
+
+  <p><em>Edge Case:</em> It is possible to score as defender if a unit moved to the BF during an open showdown (e.g. with Zenith Blade). For this case, see <a href="https://discord.com/channels/1314690307811577887/1380255604148277369/1382030329132355826">here</a>.</p>
+
+  <h3 class="mt-4 mb-2">Relevant CDR Rules:</h3>
+  <p><em>545. Showdown<br>620. Combat</em></p>
+</div>
+{% endblock %}

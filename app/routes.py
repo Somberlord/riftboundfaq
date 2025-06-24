@@ -1,30 +1,16 @@
 from flask import render_template
 from app import app
+import app.page_loader as page_loader
 
 
 @app.route('/')
-@app.route('/index')
 def index():
-    return render_template('home.html', title='Home', navlist=get_pages())
+    return page_loader.render_guide(page_loader.DEFAULT_LANGUAGE, 'home')
 
 @app.route('/<page_name>')
 def page(page_name):
-    return render_template(f'{ page_name }.html', title=page_name, navlist=get_pages())
+    return page_loader.render_guide(page_loader.DEFAULT_LANGUAGE, page_name)
 
-def get_pages():
-    import os
-    from pathlib import Path
-    result = list()
-    current_dir = os.getcwd()
-    base_dir = os.path.join(current_dir, 'app', 'templates')
-    files = os.listdir(base_dir)
-    for file in files:
-        filename = Path(file).stem
-        if filename == 'home':
-            result.insert(0, filename)
-        elif filename != 'base':
-            result.append(filename)
-        
-        
-    return result
-    
+@app.route('/<lang>/<page_name>')
+def lang_page(lang, page_name):
+    return page_loader.render_guide(lang, page_name)
