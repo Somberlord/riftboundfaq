@@ -11,15 +11,29 @@
   <script defer src="static/darkmodeHandler.js"></script>
 </head>
 <body>
+  <!-- Site Banner -->
+  <div class="site-banner">
+    <h1 class="banner-title">Riftbound Community FAQ</h1>
+  </div>
   <!-- Bouton visible sur mobile -->
   <button class="btn btn-primary d-md-none m-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
     ☰
   </button>
 
-    <div class="container-fluid">
+  <!-- Floating Dark Mode Toggle Button -->
+  <button id="darkmode-toggle" class="darkmode-toggle-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+    <span id="darkmode-toggle-icon">🌙</span>
+  </button>
+
+  <!-- Collapsible Sidebar Toggle Button (desktop only) -->
+  <button id="sidebar-toggle" class="btn btn-secondary d-none d-md-block sidebar-toggle-btn" type="button" title="Toggle sidebar" aria-label="Toggle sidebar" style="position:absolute;top:1.5rem;left:0.5rem;z-index:110;">
+    <span id="sidebar-toggle-icon">⮜</span>
+  </button>
+
+  <div class="container-fluid">
     <div class="row">
       <!-- Sidebar visible à partir de md -->
-      <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar">
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-none d-md-block sidebar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {% for entry in navlist %}
             <li class="nav-item"><a class="nav-link" href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
@@ -28,7 +42,6 @@
       </nav>
 
       <main class="col-md-9 col-lg-10 p-4">
-      <h1>Riftbound Community FAQ</h1>
       <!-- Contenu principal -->
       {% block content %}{% endblock %}
       </main>
@@ -52,4 +65,21 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
+<footer class="site-footer py-3">
+  <div class="container">
+    <nav>
+      <ul class="footer-nav list-inline mb-2">
+        {% for entry in navlist %}
+          <li class="list-inline-item"><a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="legal-notes small text-muted mt-2">
+      <p>
+        Riftbound Community FAQ is an unofficial fan project and is not affiliated with the original game creators or publishers.<br>
+        All trademarks and copyrights are property of their respective owners.
+      </p>
+    </div>
+  </div>
+</footer>
 </html>
