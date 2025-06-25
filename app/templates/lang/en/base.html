@@ -69,14 +69,10 @@
   <div class="container">
     <nav>
       <ul class="footer-nav list-inline mb-2">
-        {% for entry in navlist %}
-          <li class="list-inline-item">
-            <a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
-            {% if not loop.last %}
-              <span class="footer-separator text-muted">|</span>
-            {% endif %}
-          </li>
-        {% endfor %}
+          <li class="list-inline-item"><a href="/en/thanks">Thanks</a></li>
+          <li class="list-inline-item"><a href="/en/legal">Legal</a></li>
+          <li class="list-inline-item"><a href="/en/contact">Contact</a></li>
+          <span class="footer-separator text-muted">|</span>
       </ul>
     </nav>
     <div class="legal-notes small text-muted mt-2">
