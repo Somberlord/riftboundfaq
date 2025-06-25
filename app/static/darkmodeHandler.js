@@ -4,7 +4,7 @@ function toggleDarkMode() {
     document.body.classList.toggle('light-mode', !isDark);
     localStorage.setItem('darkMode', isDark);
     updateDarkModeButton();
-    updateMightIcons();
+    updateIcons();
 }
 
 function updateDarkModeButton() {
@@ -17,7 +17,7 @@ function updateDarkModeButton() {
     }
 }
 
-function updateMightIcons() {
+function updateIcons() {
     const isDark = document.body.classList.contains('dark-mode');
     document.querySelectorAll('.might-icon').forEach(img => {
         img.src = isDark ? img.dataset.dark : img.dataset.light;
@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-mode', isDark);
         document.body.classList.toggle('light-mode', !isDark);
         setIcon(isDark);
+        updateIcons();
     }
 
     // Load preference
