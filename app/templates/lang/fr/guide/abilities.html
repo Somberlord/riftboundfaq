@@ -2,63 +2,63 @@
 
 {% block content %}
 <div class="container my-4 themed-list-container">
-  <h2 class="mb-3">Abilities</h2>
-  <p>Cards in Riftbound can have many different <strong>abilities</strong>. All abilities belong to one of <strong>four categories</strong>:</p>
+  <h2 class="mb-3">Capacités (Abilities)</h2>
+  <p>Les cartes dans Riftbound peuvent avoir de nombreuses <strong>capacités (abilities)</strong> différentes. Toutes les capacités appartiennent à l'une des <strong>quatre catégories</strong> suivantes :</p>
 
-  <h3 class="mt-4 mb-2">Passive Abilities</h3>
+  <h3 class="mt-4 mb-2">Capacités Passives (Passive Abilities)</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Statements of <strong>fact</strong></li>
-    <li class="list-group-item">Can be conditional, recognized by the words <strong>While</strong> or <strong>If</strong></li>
-    <li class="list-group-item">Permanents are affected by passive abilities as soon as they enter the board
+    <li class="list-group-item">Énoncés de <strong>faits (fact)</strong></li>
+    <li class="list-group-item">Peuvent être conditionnelles, reconnaissables par les mots <strong>Pendant que (While)</strong> ou <strong>Si (If)</strong></li>
+    <li class="list-group-item">Les permanents sont affectés par les capacités passives dès leur arrivée sur le plateau
       <ul>
-        <li class="list-group-item">A 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" style="height:1em; vertical-align:middle;" alt="might"> unit played onto <strong>Trifarian War Camp</strong> counts as Mighty for <strong>Relentless Storm</strong></li>
+        <li class="list-group-item">Une unité de puissance 4 <img class="might-icon" src="static/images/might.webp" data-light="static/images/might.webp" data-dark="static/images/might_darkmode.webp" style="height:1em; vertical-align:middle;" alt="might"> jouée sur <strong>Trifarian War Camp</strong> est considérée comme Mighty pour <strong>Relentless Storm</strong></li>
       </ul>
     </li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Activated Abilities</h3>
+  <h3 class="mt-4 mb-2">Capacités Activées (Activated Abilities)</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Can be recognized by the presence of a <strong>colon</strong> ( ":" )</li>
-    <li class="list-group-item">Text before the colon indicates a <strong>cost</strong> that has to be paid to activate an ability.</li>
-    <li class="list-group-item">Text after the colon indicates the <strong>effect</strong> of the ability.</li>
-    <li class="list-group-item">Can only be activated on <strong>your turn</strong>, outside of a <strong>showdown</strong>, when the chain is <strong>empty</strong></li>
-    <li class="list-group-item">When the cost is paid, they are put on the <strong>chain</strong></li>
-    <li class="list-group-item">Other players can <strong>react</strong>
+    <li class="list-group-item">Reconnues par la présence de <strong>deux-points (colon ":")</strong></li>
+    <li class="list-group-item">Le texte avant les deux-points indique un <strong>coût (cost)</strong> à payer pour activer la capacité.</li>
+    <li class="list-group-item">Le texte après les deux-points indique l’<strong>effet (effect)</strong> de la capacité.</li>
+    <li class="list-group-item">Ne peuvent être activées que pendant <strong>votre tour (your turn)</strong>, en dehors d’un <strong>showdown</strong>, lorsque la chaîne est <strong>vide (empty)</strong></li>
+    <li class="list-group-item">Une fois le coût payé, elles sont placées sur la <strong>chaîne </strong></li>
+    <li class="list-group-item">Les autres joueurs peuvent <strong>réagir (react)</strong>
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Abilities that <strong>add</strong> resources cannot be reacted to</li>
+        <li class="list-group-item">Les capacités qui <strong>ajoutent (add)</strong> des ressources ne peuvent pas être contrées</li>
       </ul>
     </li>
-    <li class="list-group-item">Once every player has passed, the ability <strong>resolves</strong></li>
+    <li class="list-group-item">Une fois que chaque joueur a passé, la capacité se <strong>résout (resolves)</strong></li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Triggered Abilities</h3>
+  <h3 class="mt-4 mb-2">Capacités Déclenchées (Triggered Abilities)</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Happen when a certain <strong>condition</strong> is met</li>
-    <li class="list-group-item">Can be recognized by the words <strong>when</strong> or <strong>at</strong></li>
-    <li class="list-group-item">When the condition is met, <strong>triggered abilities</strong> are put on the <strong>chain</strong></li>
-    <li class="list-group-item">Other people can <strong>react</strong></li>
-    <li class="list-group-item">Can trigger on <strong>any turn</strong>, during <strong>any game state</strong></li>
-    <li class="list-group-item">Multiple abilities can trigger at the same time
+    <li class="list-group-item">Se produisent lorsqu’une certaine <strong>condition </strong> est remplie</li>
+    <li class="list-group-item">Reconnues par les mots <strong>quand (when)</strong> ou <strong>au moment où (at)</strong></li>
+    <li class="list-group-item">Quand la condition est remplie, les <strong>capacites déclenchées (triggered abilities)</strong> sont placées sur la <strong>chaîne (chain)</strong></li>
+    <li class="list-group-item">Les autres joueurs peuvent <strong>réagir (react)</strong></li>
+    <li class="list-group-item">Peuvent se déclencher à <strong>n’importe quel tour </strong>, pendant <strong>n’importe quel état de jeu </strong></li>
+    <li class="list-group-item">Plusieurs capacités peuvent se déclencher en même temps
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">The <strong>controller</strong> of the triggered abilities decides the <strong>order</strong> of their triggers</li>
-        <li class="list-group-item">If abilities from <strong>different players</strong> trigger, they are put on the chain in <strong>turn order</strong>, starting with the <strong>turn player</strong></li>
+        <li class="list-group-item">Le <strong>contrôleur </strong> des capacités déclenchées choisit l’<strong>ordre (order)</strong> de leur déclenchement</li>
+        <li class="list-group-item">Si des capacités de <strong>joueurs différents </strong> se déclenchent, elles sont placées sur la chaîne selon l’<strong>ordre du tour </strong>, en commençant par le <strong>joueur actif </strong></li>
       </ul>
     </li>
   </ul>
-  <p>Triggered abilities are <strong>not optional</strong>. They trigger whenever their condition is met.</p>
+  <p>Les capacités déclenchées ne sont <strong>pas optionnelles </strong>. Elles se déclenchent dès que leur condition est remplie.</p>
 
-  <h3 class="mt-4 mb-2">Replacement Effects</h3>
+  <h3 class="mt-4 mb-2">Effets de Remplacement (Replacement Effects)</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Can alter the <strong>execution</strong> of other game effects</li>
-    <li class="list-group-item">Can be recognized by the word <strong>instead</strong></li>
-    <li class="list-group-item">If multiple replacement effects apply to the <strong>same event</strong>, the controller of the <strong>relevant object</strong> can choose the order
+    <li class="list-group-item">Peuvent modifier l’<strong>exécution </strong> d’autres effets de jeu</li>
+    <li class="list-group-item">Reconnus par le mot <strong>à la place (instead)</strong></li>
+    <li class="list-group-item">Si plusieurs effets de remplacement s’appliquent au <strong>même événement </strong>, le contrôleur de l’<strong>objet concerné (relevant object)</strong> peut choisir l’ordre d’application
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">If a player controls both <strong>Zhonyas</strong> and <strong>Sett, The Boss</strong>, they can choose which effect to use when a unit would die</li>
+        <li class="list-group-item">Si un joueur contrôle à la fois <strong>Zhonyas</strong> et <strong>Sett, The Boss</strong>, il peut choisir quel effet utiliser lorsqu’une unité devrait mourir</li>
       </ul>
     </li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Relevant CRD Rules:</h3>
-  <p><em>563. Abilities</em></p>
+  <h3 class="mt-4 mb-2">Règle CRD pertinente :</h3>
+  <p><em>563. Capacites (Abilities)</em></p>
 </div>
 {% endblock %}
