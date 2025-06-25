@@ -2,31 +2,31 @@
 
 {% block content %}
 <div class="container my-4 themed-list-container">
-  <h2 class="mb-3">Might &amp; Damage</h2>
-  <p><strong>Might</strong> is the Combat statistic of a Unit <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"></p>
+  <h2 class="mb-3">Force (Might) &amp; Dégâts (Damage)</h2>
+  <p><strong>La Force (Might)</strong> est la statistique de combat d’une unité <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"></p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">When a <strong>Unit</strong> is marked damage equal or exceeding its <strong>Might</strong>, it is Killed.</li>
-    <li class="list-group-item">A <strong>Unit</strong> can’t have less than zero <strong>Might</strong>. A zero-<strong>Might</strong> Unit still needs to be marked one damage to be killed.</li>
-    <li class="list-group-item">Damage <strong>DOES NOT</strong> reduce a Unit's <strong>Might</strong>. <strong>Units</strong> always deal damage with their <strong>Might</strong>.</li>
+    <li class="list-group-item">Lorsqu’une <strong>Unité</strong> a des dégâts (Damage) marqués égaux ou supérieurs à sa <strong>Force (Might)</strong>, elle est tuée.</li>
+    <li class="list-group-item">Une <strong>Unité</strong> ne peut pas avoir une <strong>Force (Might)</strong> inférieure à zéro. Une unité avec 0 de <strong>Force (Might)</strong> doit quand même subir un dégât pour être tuée.</li>
+    <li class="list-group-item">Les dégâts <strong>NE RÉDUISENT PAS</strong> la <strong>Force (Might)</strong> d’une unité. Les <strong>unités</strong> infligent toujours des dégâts correspondant à leur <strong>Force (Might)</strong>.</li>
   </ul>
 
-  <p><strong>Units</strong> can have damage marked on them temporarily:</p>
+  <p>Les <strong>unités</strong> peuvent avoir des dégâts (Damage) marqués temporairement :</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Damage is cleared from <strong>ALL Units</strong> at the end of each player’s turn and at the end of each <strong>Combat</strong>.</li>
-    <li class="list-group-item">Damage can be tracked by memory or any agreed-upon method.</li>
-    <li class="list-group-item">Reducing the <strong>Might</strong> of a <strong>Unit</strong> may kill it if the damage marked on it becomes equal to or greater than its new <strong>Might</strong>.</li>
+    <li class="list-group-item">Les dégâts sont retirés de <strong>Toutes les unités</strong> à la fin de chaque tour et à la fin de chaque <strong>Combat</strong>.</li>
+    <li class="list-group-item">Les dégâts peuvent être suivis par mémoire ou par toute méthode convenue. (dés, jetons, ...)</li>
+    <li class="list-group-item">Réduire la <strong>Force (Might)</strong> d’une <strong>Unité</strong> peut la tuer si les dégâts marqués deviennent égaux ou supérieurs à sa nouvelle <strong>Force (Might)</strong>.</li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Relevant CRD Rules</h3>
-  <p><em>139.2 Might<br>139.3 Damage</em></p>
+  <h3 class="mt-4 mb-2">Règles CRD pertinentes :</h3>
+  <p><em>139.2 Force (Might)<br>139.3 Dégâts (Damage)</em></p>
 
-  <h3 class="mt-4 mb-2">Example:</h3>
+  <h3 class="mt-4 mb-2">Exemple :</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Combat showdown between player A with a 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> Unit and player B with a 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> Unit.</li>
-    <li class="list-group-item">Player B plays a spell that deals 3 damage to the 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> Unit. This unit still has 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> and 3 damage marked.</li>
-    <li class="list-group-item">Player A has a sum of 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> and assigns 4 damage to the 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> Unit. It now has 7 damage marked.</li>
-    <li class="list-group-item">Player B has a sum of 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> and assigns 6 damage to the 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> Unit.</li>
-    <li class="list-group-item">Both units die; nobody controls the battlefield.</li>
+    <li class="list-group-item">Affrontement (Showdown) entre le joueur A avec une unité ayant 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> de Force (Might) et le joueur B avec une unité à 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;">.</li>
+    <li class="list-group-item">Le joueur B joue un sort infligeant 3 dégâts à l’unité à 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;">. L’unité a toujours 6 de Force (Might) et 3 dégâts marqués.</li>
+    <li class="list-group-item">Le joueur A a un total de 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> et attribue 4 dégâts à l’unité à 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;">. Elle a maintenant 7 dégâts marqués.</li>
+    <li class="list-group-item">Le joueur B a un total de 6 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;"> et attribue 6 dégâts à l’unité à 4 <img class="might-icon" src="/static/images/might.webp" data-light="/static/images/might.webp" data-dark="/static/images/might_darkmode.webp" alt="Might" style="height:1em; vertical-align:middle;">.</li>
+    <li class="list-group-item">Les deux unités sont détruites ; personne ne contrôle le champ de bataille.</li>
   </ul>
 </div>
 {% endblock %}
