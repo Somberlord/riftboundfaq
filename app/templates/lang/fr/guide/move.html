@@ -1,39 +1,38 @@
 {% extends "lang/fr/base.html" %}
 
-{% block content %}   
+{% block content %}
 <div class="container my-4 themed-list-container">
-  <h2 class="mb-3">Move</h2>
-  <p><strong>Moving</strong> is a <strong>Game Object</strong> moving between two <strong>Locations</strong> (<strong>Battlefields</strong> and <strong>Bases</strong>).</p>
+  <h2 class="mb-3">Déplacement (Move)</h2>
+  <p><strong>Le déplacement</strong> désigne le mouvement d’un <strong>Objet de jeu</strong> entre deux <strong>Emplacements</strong> (<strong>Champs de bataille</strong> et <strong>Bases</strong>).</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">For now, only <strong>Units</strong> can be moved.</li>
-    <li class="list-group-item">Game objects can be moved between <strong>Battlefields</strong>, or between a <strong>Battlefield</strong> and the <strong>Base</strong> of the player controlling the game object.</li>
-    <li class="list-group-item"><strong>Units</strong> can’t be moved to a <strong>Battlefield</strong> already containing <strong>Units</strong> from two other players.</li>
+    <li class="list-group-item">Actuellement, seules les <strong>Unités</strong> peuvent se déplacer.</li>
+    <li class="list-group-item">Les objets de jeu peuvent être déplacés entre différents <strong>Champs de bataille</strong>, ou entre un <strong>Champ de bataille</strong> et la <strong>Base</strong> du joueur qui le contrôle.</li>
+    <li class="list-group-item">Les <strong>Unités</strong> ne peuvent pas être déplacées vers un <strong>Champ de bataille</strong> déjà occupé par des <strong>Unités</strong> de deux autres joueurs.</li>
   </ul>
-  <p>Effects allowing a move may specify additional restrictions.</p>
+  <p>Les effets qui permettent un déplacement peuvent spécifier des restrictions supplémentaires.</p>
 
-  <h3 class="mt-4 mb-3">Standard Move</h3>
-  <p>All units have access to the <strong>Standard Move</strong>:</p>
+  <h3 class="mt-4 mb-3">Déplacement standard</h3>
+  <p>Toutes les unités ont accès au <strong>Déplacement standard</strong> :</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Can only be done during one’s Turn, out of <strong>Showdown</strong> and with empty <strong>Chain</strong>.</li>
-    <li class="list-group-item">Multiple <strong>Units</strong> can use the <strong>Standard Move</strong> at the same time.</li>
-    <li class="list-group-item">The cost for each <strong>Unit</strong> to use the <strong>Standard Move</strong> is to <strong>Exhaust</strong>.</li>
-    <li class="list-group-item"><strong>Units</strong> moving together using <strong>Standard Move</strong> must have the same Destination.</li>
-    <li class="list-group-item"><strong>Units</strong> moving together using <strong>Standard Move</strong> may come from different Locations.</li>
-    <li class="list-group-item"><strong>Units</strong> can use the <strong>Standard Move</strong> to move from <strong>Base</strong> to <strong>Battlefield</strong>, or from <strong>Battlefield</strong> to <strong>Base</strong>.</li>
-    <li class="list-group-item"><strong>Units</strong> with <strong>Ganking</strong> can use the <strong>Standard Move</strong> to move from <strong>Battlefield</strong> to <strong>Battlefield</strong>.</li>
-    <li class="list-group-item">Multiple <strong>Units</strong> with <strong>Ganking</strong> can still move at the same time with a <strong>Standard Move</strong>.</li>
+    <li class="list-group-item">Ne peut être effectué que pendant son propre tour, en dehors d’un <strong>Affrontement</strong> (Showdown) et avec une <strong>Chaîne</strong> vide.</li>
+    <li class="list-group-item">Plusieurs <strong>Unités</strong> peuvent utiliser le <strong>Déplacement standard</strong> en même temps.</li>
+    <li class="list-group-item">Le coût pour chaque <strong>Unité</strong> pour se déplacer ainsi est de s’<strong>Épuiser</strong> (Exhaust).</li>
+    <li class="list-group-item">Les <strong>Unités</strong> se déplaçant ensemble via un <strong>Déplacement standard</strong> doivent avoir la même destination.</li>
+    <li class="list-group-item">Les <strong>Unités</strong> se déplaçant ensemble peuvent provenir d’emplacements différents.</li>
+    <li class="list-group-item">Les <strong>Unités</strong> peuvent utiliser le <strong>Déplacement standard</strong> pour aller de la <strong>Base</strong> vers un <strong>Champ de bataille</strong>, ou l’inverse.</li>
+    <li class="list-group-item">Les <strong>Unités</strong> avec <strong>Ganking</strong> peuvent utiliser le <strong>Déplacement standard</strong> pour aller d’un <strong>Champ de bataille</strong> à un autre.</li>
+    <li class="list-group-item">Plusieurs <strong>Unités</strong> ayant <strong>Ganking</strong> peuvent quand même se déplacer simultanément avec un <strong>Déplacement standard</strong>.</li>
   </ul>
 
-  <p>All other Move Restrictions still apply.</p>
+  <p>Toutes les autres restrictions de déplacement restent applicables.</p>
 
   <h3 class="mt-4 mb-3">Notes</h3>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Only <strong>Standard Move</strong> exhausts units. Every other move does not exhaust Units, and can move exhausted Units.</li>
-    <li class="list-group-item"><strong>Standard Move</strong> CANNOT be combined with other move effects. (<em>ex : Yasuo legend ability</em>)</li>
+    <li class="list-group-item">Seul le <strong>Déplacement standard</strong> épuise les unités. Tous les autres types de déplacement n’épuisent pas les unités, et peuvent déplacer des unités déjà épuisées.</li>
+    <li class="list-group-item">Le <strong>Déplacement standard</strong> d'une ou plusieurs unités ne peut pas être accompagné du déplacement d'une autre unité qui serait déplacée par un effet de déplacement. (<em>ex : capacité de légende de Yasuo</em>)</li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Relevant CRD Rules</h3>
-  <p><em>106.2.d Base<br>140. Standard Move<br>596. Move<br>722. Ganking</em></p>
+  <h3 class="mt-4 mb-2">Règles CRD pertinentes :</h3>
+  <p><em>106.2.d Base<br>140. Déplacement standard<br>596. Déplacement<br>722. Ganking</em></p>
 </div>
-
 {% endblock %}
