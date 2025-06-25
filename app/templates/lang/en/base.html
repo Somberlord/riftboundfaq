@@ -26,9 +26,9 @@
   </button>
 
   <!-- Collapsible Sidebar Toggle Button (desktop only) -->
-  <button id="sidebar-toggle" class="btn btn-secondary d-none d-md-block sidebar-toggle-btn" type="button" title="Toggle sidebar" aria-label="Toggle sidebar" style="position:absolute;top:1.5rem;left:0.5rem;z-index:110;">
-    <span id="sidebar-toggle-icon">⮜</span>
-  </button>
+ <button id="sidebar-toggle" class="btn btn-secondary d-none d-md-block sidebar-toggle-btn d-flex align-items-center justify-content-center" type="button" title="Toggle sidebar" aria-label="Toggle sidebar" style="position:absolute;top:1.5rem;left:0.5rem;z-index:110; width: 2.5rem; height: 2.5rem; padding: 0;">
+  <span id="sidebar-toggle-icon">⮜</span>
+</button>
 
   <div class="container-fluid">
     <div class="row">
@@ -70,7 +70,12 @@
     <nav>
       <ul class="footer-nav list-inline mb-2">
         {% for entry in navlist %}
-          <li class="list-inline-item"><a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
+          <li class="list-inline-item">
+            <a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
+            {% if not loop.last %}
+              <span class="footer-separator text-muted">|</span>
+            {% endif %}
+          </li>
         {% endfor %}
       </ul>
     </nav>
