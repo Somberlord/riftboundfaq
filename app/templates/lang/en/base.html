@@ -57,7 +57,7 @@
     <div class="offcanvas-body sidebar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {% for entry in navlist %}
-            <li class="nav-item"><a href="{{ entry }}">{{ entry.title() }}</a></li>
+            <li class="nav-item"><a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
             {% endfor %}
         </ul>
     </div>
