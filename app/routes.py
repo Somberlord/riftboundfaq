@@ -31,7 +31,9 @@ def legal():
 def legal_lang(lang):
     return render_template(f'lang/{lang}/legal.html', title='Legal', navlist=page_loader.get_pages(lang))
 
-
+@app.route('/knownissues')
+def known_issues():
+    return render_template(f'knis/known_issues.html', title='Know Issues', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
 
 @app.route('/<page_name>')
 def page(page_name):

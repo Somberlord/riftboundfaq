@@ -38,6 +38,7 @@
             {% for entry in navlist %}
             <li class="nav-item"><a class="nav-link" href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
             {% endfor %}
+            <li class="nav-item"><a class="nav-link" href="/knownissues">Known Issues</a></li>
         </ul>
       </nav>
 
@@ -59,6 +60,7 @@
             {% for entry in navlist %}
             <li class="nav-item"><a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
             {% endfor %}
+            <li class="nav-item"><a class="nav-link" href="/knownissues">Known Issues</a></li>
         </ul>
     </div>
   </div>
