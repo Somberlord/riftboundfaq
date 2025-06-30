@@ -33,7 +33,7 @@ def legal_lang(lang):
 
 @app.route('/riotrules')
 def known_issues():
-    return render_template(f'knis/known_issues.html', title='Know Issues', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
+    return render_template(f'knis/known_issues.html', title='Riot Rules', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
 
 @app.route('/<page_name>')
 def page(page_name):
