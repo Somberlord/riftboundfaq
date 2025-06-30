@@ -5,7 +5,7 @@ import app.page_loader as page_loader
 
 @app.route('/')
 def index():
-    return page_loader.render_guide(page_loader.DEFAULT_LANGUAGE, 'home')
+    return render_template(f'lang/en/home.html', title='Home', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
 
 @app.route('/thanks')
 def thanks():
@@ -31,7 +31,7 @@ def legal():
 def legal_lang(lang):
     return render_template(f'lang/{lang}/legal.html', title='Legal', navlist=page_loader.get_pages(lang))
 
-@app.route('/knownissues')
+@app.route('/riotrules')
 def known_issues():
     return render_template(f'knis/known_issues.html', title='Know Issues', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
 

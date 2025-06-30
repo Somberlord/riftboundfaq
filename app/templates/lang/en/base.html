@@ -35,10 +35,17 @@
       <!-- Sidebar visible à partir de md -->
       <nav id="sidebar" class="col-md-3 col-lg-2 d-none d-md-block sidebar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            {% for entry in navlist %}
-            <li class="nav-item"><a class="nav-link" href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
-            {% endfor %}
-            <li class="nav-item"><a class="nav-link" href="/knownissues">Known Issues</a></li>
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Guides</a></li>
+          <li class="nav-item">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% for entry in navlist %}
+                <li class="nav-item"><a class="nav-link" href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
+                {% endfor %}
+                
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/riotrules">Riot Rules</a></li>
         </ul>
       </nav>
 
