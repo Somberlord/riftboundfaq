@@ -237,6 +237,34 @@ body.dark-mode .sidebar-toggle-btn:hover {
   display: none;
 }
 
+/* Guide arrow styles */
+.guide-arrow {
+  border: none;
+  font-size: .65em !important;
+  font-family: 'Segoe UI Symbol', 'Arial Unicode MS', Arial, sans-serif !important;
+  box-shadow: none !important;
+  pointer-events: none;
+  transition: color 0.2s;
+  color: #222;
+  display: flex;
+  align-items: center;
+  line-height: 1; 
+}
+
+body.dark-mode .guide-arrow {
+  color: #eee;
+}
+
+/* Active link styles */
+.nav-link.active {
+  background-color: #e9ecef !important;
+  font-weight: bold;
+}
+body.dark-mode .nav-link.active {
+  color: #fff !important;
+  background-color: #222 !important;
+}
+
 @media (max-width: 600px) {
   .site-banner {
     font-size: 1.2rem;
