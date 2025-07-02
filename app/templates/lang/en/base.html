@@ -9,6 +9,7 @@
   <link rel="icon" href="/static/favicon.ico" />
   <link rel="stylesheet" href="/static/style.css" />
   <script defer src="/static/darkmodeHandler.js"></script>
+  <script defer src="/static/guideMenuHandler.js"></script>
 </head>
 <body>
   <!-- Site Banner -->
@@ -35,17 +36,23 @@
       <!-- Sidebar visible à partir de md -->
       <nav id="sidebar" class="col-md-3 col-lg-2 d-none d-md-block sidebar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Guides</a></li>
+          <li class="nav-item"><a class="nav-link{% if request.path == '/' %} active{% endif %}" href="/">Home</a></li>
           <li class="nav-item">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% for entry in navlist %}
-                <li class="nav-item"><a class="nav-link" href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
-                {% endfor %}
-                
-            </ul>
+            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#guidesCollapse" role="button" aria-expanded="{{ 'true' if request.path.startswith('/guide/') else 'false' }}" aria-controls="guidesCollapse">
+              Guides
+              <span class="ms-1 guide-arrow" id="guideArrowDesktop">{{ '▼' if request.path.startswith('/guide/') else '▶' }}</span>
+            </a>
+            <div class="collapse{% if request.path.startswith('/guide/') %} show{% endif %}" id="guidesCollapse">
+              <ul class="navbar-nav ms-3">
+                  {% for entry in navlist %}
+                    <li class="nav-item">
+                      <a class="nav-link{% if request.path == '/guide/' + entry %} active{% endif %}" href="/guide/{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
+                    </li>
+                  {% endfor %}
+              </ul>
+            </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="/riotrules">Riot Rules</a></li>
+          <li class="nav-item"><a class="nav-link{% if request.path == '/riotrules' %} active{% endif %}" href="/riotrules">Riot Rules</a></li>
         </ul>
       </nav>
 
@@ -64,10 +71,23 @@
     </div>
     <div class="offcanvas-body sidebar">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            {% for entry in navlist %}
-            <li class="nav-item"><a href="{{ entry }}">{{ entry.replace('_',' ').title() }}</a></li>
-            {% endfor %}
-            <li class="nav-item"><a class="nav-link" href="/knownissues">Known Issues</a></li>
+          <li class="nav-item"><a class="nav-link{% if request.path == '/' %} active{% endif %}" href="/">Homcbvfdge</a></li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#guidesCollapseMobile" role="button" aria-expanded="{{ 'true' if request.path.startswith('/guide/') else 'false' }}" aria-controls="guidesCollapseMobile">
+              Guides
+              <span class="ms-1 guide-arrow" id="guideArrowMobile">{{ '▼' if request.path.startswith('/guide/') else '▶' }}</span>
+            </a>
+            <div class="collapse{% if request.path.startswith('/guide/') %} show{% endif %}" id="guidesCollapseMobile">
+              <ul class="navbar-nav ms-3">
+                  {% for entry in navlist %}
+                    <li class="nav-item">
+                      <a class="nav-link{% if request.path == '/guide/' + entry %} active{% endif %}" href="/guide/{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
+                    </li>
+                  {% endfor %}
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link{% if request.path == '/knownissues' %} active{% endif %}" href="/knownissues">Known Issues</a></li>
         </ul>
     </div>
   </div>
