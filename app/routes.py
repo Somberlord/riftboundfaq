@@ -5,40 +5,44 @@ import app.page_loader as page_loader
 
 @app.route('/')
 def index():
-    return render_template(f'lang/en/home.html', title='Home', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
+    return page_loader.render_static_page('home')
 
 @app.route('/thanks')
 def thanks():
-    return thanks_lang(page_loader.DEFAULT_LANGUAGE)
+    return page_loader.render_static_page('thanks')
 
 @app.route('/<lang>/thanks')
 def thanks_lang(lang):
-    return render_template(f'lang/{lang}/thanks.html', title='Thanks', navlist=page_loader.get_pages(lang))
+    return page_loader.render_static_page('thanks', lang=lang)
 
 @app.route('/contact')
 def contact():
-    return contact_lang(page_loader.DEFAULT_LANGUAGE)
+    return page_loader.render_static_page('contact')
 
 @app.route('/<lang>/contact')
 def contact_lang(lang):
-    return render_template(f'lang/{lang}/contact.html', title='Contact', navlist=page_loader.get_pages(lang))
+    return page_loader.render_static_page('contact', lang=lang)
 
 @app.route('/legal')
 def legal():
-    return legal_lang(page_loader.DEFAULT_LANGUAGE)
+    return page_loader.render_static_page('legal')
 
 @app.route('/<lang>/legal')
 def legal_lang(lang):
-    return render_template(f'lang/{lang}/legal.html', title='Legal', navlist=page_loader.get_pages(lang))
+    return page_loader.render_static_page('legal', lang=lang)
 
 @app.route('/riotrules')
 def known_issues():
-    return render_template(f'knis/known_issues.html', title='Riot Rules', navlist=page_loader.get_pages(page_loader.DEFAULT_LANGUAGE))
+    return page_loader.render_static_page('riotrules', title='Riot Rules', fullpath='knis/known_issues.html')
+
+@app.route('/sets/<rbset>')
+def rbset(rbset):
+    return page_loader.render_set(rbset)
 
 @app.route('/<page_name>')
 def page(page_name):
-    return page_loader.render_guide(page_loader.DEFAULT_LANGUAGE, page_name)
+    return page_loader.render_guide(page_name)
 
 @app.route('/<lang>/<page_name>')
 def lang_page(lang, page_name):
-    return page_loader.render_guide(lang, page_name)
+    return page_loader.render_guide(page_name, lang=lang)

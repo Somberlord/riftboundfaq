@@ -1,0 +1,6 @@
+---
+faq_list:
+  - cards:
+    - OGN-102
+    errata: "[OGN-102] Should read : Banish a friendly unit, then its owner plays it to base, ignoring its cost."
+...

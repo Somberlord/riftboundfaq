@@ -1,0 +1,25 @@
+{% extends "lang/en/base.html" %}
+
+{% block content %}   
+<div class="container my-4 themed-list-container">
+  <h2 class="mb-3">{{ rbset.config.set }}</h2>
+  
+  {% for card in rbset["items"] %}
+  <h3 class="mt-4 mb-2 ml-2">[{{ card.id }}] {{ card.title }}</h3>
+  {% if card.id not in faq %}
+  <p>There is no FAQ yet for this card.</p>
+  {% else %}
+    {% for item in faq[card.id] %}
+      {% if 'errata' in item %}
+      <p><strong>Errata : {{ item.errata }}</strong></p>
+      {% endif %}
+      {% if question in item %}
+      <p>Q: {{ item.question }}</p>
+      <p>A: Here is the answer.</p>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% endblock %}

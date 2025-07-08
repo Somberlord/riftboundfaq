@@ -1,0 +1,325 @@
+{
+  "config": {
+    "assetsBaseUrl": "./cards/",
+    "placeholderCardBaseUrl": "../placeholder/",
+    "totalCards": 24,
+    "useLightbox": true,
+    "showSearchBar": false,
+    "buildDate": "2025-06-30",
+    "set": "OGS"
+  },
+  "items": [
+    {
+      "number": 1,
+      "id": "OGS-001",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Annie, Fiery",
+      "altText": "Riftbound. Annie, Fiery. Rarity: Epic. Color: Red. Type: Unit. Super: Champion. Tags: Annie. How to play this card: Your spells and abilities deal 1 Bonus Damage. Each instance of damage the spell deals is increased by 1."
+    },
+    {
+      "number": 2,
+      "id": "OGS-002",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Firestorm",
+      "altText": "Riftbound. Firestorm. Rarity: Uncommon. Color: Red. Type: Spell. Super: None. Tags: None. How to play this card: Deal 3 to all enemy units at a battlefield."
+    },
+    {
+      "number": 3,
+      "id": "OGS-003",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Incinerate",
+      "altText": "Riftbound. Incinerate. Rarity: Common. Color: Red. Type: Spell. Super: None. Tags: None. How to play this card: Action Play on your turn or in showdowns. Deal 2 to a unit at a battlefield."
+    },
+    {
+      "number": 4,
+      "id": "OGS-004",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Yi, Meditative",
+      "altText": "Riftbound. Yi, Meditative. Rarity: Rare. Color: Green. Type: Unit. Super: Champion. Tags: Master Yi. How to play this card: While you have 8+ runes, I have +4 S."
+    },
+    {
+      "number": 5,
+      "id": "OGS-005",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Zephyr Sage",
+      "altText": "Riftbound. Zephyr Sage. Rarity: Uncommon. Color: Green. Type: Unit. Super: None. Tags: Bird. How to play this card: Shield +1 S while I'm a defender."
+    },
+    {
+      "number": 6,
+      "id": "OGS-006",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Lux, Illuminated",
+      "altText": "Riftbound. Lux, Illuminated. Rarity: Rare. Color: Blue. Type: Unit. Super: Champion. Tags: Lux. How to play this card: When you play a spell that costs 5 or more, give me +3 S this turn."
+    },
+    {
+      "number": 7,
+      "id": "OGS-007",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Garen, Rugged",
+      "altText": "Riftbound. Garen, Rugged. Rarity: Rare. Color: Orange. Type: Unit. Super: Champion. Tags: Garen,Elite. How to play this card: Assault 2, Shield 2 +2 S while I'm an attacker or defender."
+    },
+    {
+      "number": 8,
+      "id": "OGS-008",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Gentlemen's Duel",
+      "altText": "Riftbound. Gentlemen's Duel. Rarity: Common. Color: Orange. Type: Spell. Super: None. Tags: None. How to play this card: Action Play on your turn or in showdowns. Give a friendly unit +3 S this turn. Then choose an enemy unit. They deal damage equal to their Mights to each other."
+    },
+    {
+      "number": 9,
+      "id": "OGS-009",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Yi, Honed",
+      "altText": "Riftbound. Yi, Honed. Rarity: Epic. Color: Orange. Type: Unit. Super: Champion. Tags: Master Yi. How to play this card: Ganking I can move from battlefield to battlefield. I enter ready."
+    },
+    {
+      "number": 10,
+      "id": "OGS-010",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Annie, Stubborn",
+      "altText": "Riftbound. Annie, Stubborn. Rarity: Rare. Color: Purple. Type: Unit. Super: Champion. Tags: Annie. How to play this card: When you play me, return a spell from your trash to your hand."
+    },
+    {
+      "number": 11,
+      "id": "OGS-011",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Flash",
+      "altText": "Riftbound. Flash. Rarity: Common. Color: Purple. Type: Spell. Super: None. Tags: None. How to play this card: Reaction Play any time, even before spells and abilities resolve. Move up to 2 friendly units to base."
+    },
+    {
+      "number": 12,
+      "id": "OGS-012",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Blast of Power",
+      "altText": "Riftbound. Blast of Power. Rarity: Common. Color: Yellow. Type: Spell. Super: None. Tags: None. How to play this card: Action Play on your turn or in showdowns. Kill a unit at a battlefield."
+    },
+    {
+      "number": 13,
+      "id": "OGS-013",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Garen, Commander",
+      "altText": "Riftbound. Garen, Commander. Rarity: Epic. Color: Yellow. Type: Unit. Super: Champion. Tags: Garen,Elite. How to play this card: Other friendly units have +1 S here."
+    },
+    {
+      "number": 14,
+      "id": "OGS-014",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Lux, Crownguard",
+      "altText": "Riftbound. Lux, Crownguard. Rarity: Epic. Color: Yellow. Type: Unit. Super: Champion. Tags: Lux. How to play this card: T: Reaction: Add 2. Use only to play spells. Abilities that add resources can't be reacted to."
+    },
+    {
+      "number": 15,
+      "id": "OGS-015",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Recruit the Vanguard",
+      "altText": "Riftbound. Recruit the Vanguard. Rarity: Uncommon. Color: Yellow. Type: Spell. Super: None. Tags: None. How to play this card: Action Play on your turn or in showdowns.\n Play four 1 S Recruit unit tokens. They can be played to your base or to battlefields you control."
+    },
+    {
+      "number": 16,
+      "id": "OGS-016",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Vanguard Attendant",
+      "altText": "Riftbound. Vanguard Attendant. Rarity: Common. Color: Yellow. Type: Unit. Super: None. Tags: Elite. How to play this card: I enter ready."
+    },
+    {
+      "number": 17,
+      "id": "OGS-017",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Dark Child - Starter",
+      "altText": "Riftbound. Dark Child - Starter. Rarity: Rare. Color: Red,Purple. Type: Legend. Super: Champion. Tags: Annie. How to play this card: At the end of your turn, ready 2 runes."
+    },
+    {
+      "number": 18,
+      "id": "OGS-018",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Tibbers",
+      "altText": "Riftbound. Tibbers. Rarity: Epic. Color: Red,Purple. Type: Unit. Super: Signature. Tags: Annie. How to play this card: When you play me, deal 3 to all units at battlefields."
+    },
+    {
+      "number": 19,
+      "id": "OGS-019",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Wuju Bladesman - Starter",
+      "altText": "Riftbound. Wuju Bladesman - Starter. Rarity: Rare. Color: Green,Orange. Type: Legend. Super: Champion. Tags: Master Yi. How to play this card: While a friendly unit defends alone, it gets +2 S."
+    },
+    {
+      "number": 20,
+      "id": "OGS-020",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Highlander",
+      "altText": "Riftbound. Highlander. Rarity: Epic. Color: Green, Orange. Type: Spell. Super: Signature. Tags: Master Yi. How to play this card: Reaction Play any time, even before spells and abilities resolve.\n Choose a friendly unit. The next time it dies this turn, recall it exhausted instead. Send it to base. This isn't a move."
+    },
+    {
+      "number": 21,
+      "id": "OGS-021",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Lady of Luminosity - Starter",
+      "altText": "Riftbound. Lady of Luminosity - Starter. Rarity: Rare. Color: Blue,Yellow. Type: Legend. Super: Champion. Tags: Lux. How to play this card: When you play a spell that costs 5 or more, draw 1."
+    },
+    {
+      "number": 22,
+      "id": "OGS-022",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Final Spark",
+      "altText": "Riftbound. Final Spark. Rarity: Epic. Color: Blue,Yellow. Type: Spell. Super: Signature. Tags: Lux. How to play this card: Action Play on your turn or in showdowns. Deal 8 to a unit."
+    },
+    {
+      "number": 23,
+      "id": "OGS-023",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Might of Demacia - Starter",
+      "altText": "Riftbound. Might of Demacia - Starter. Rarity: Rare. Color: Orange,Yellow. Type: Legend. Super: Champion. Tags: Garen. How to play this card: When you conquer, if you have 4+ units at that battlefield, draw 2."
+    },
+    {
+      "number": 24,
+      "id": "OGS-024",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Decisive Strike",
+      "altText": "Riftbound. Decisive Strike. Rarity: Epic. Color: Orange,Yellow. Type: Spell. Super: Signature. Tags: Garen. How to play this card: Action Play on your turn or in showdowns. Give friendly units +2 S this turn."
+    }
+  ]
+}

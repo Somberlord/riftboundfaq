@@ -1,0 +1,34 @@
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link{% if navlist['page_name'] == 'home' %} active{% endif %}" href="/">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#guidesCollapse" role="button" aria-expanded="{{ 'true' if navlist['folder'] == 'guide' else 'false' }}" aria-controls="guidesCollapse">
+              Guides
+              <span class="ms-1 guide-arrow" id="guideArrowDesktop">{{ '▼' if navlist['folder'] == 'guide' else '▶' }}</span>
+            </a>
+            <div class="collapse{% if navlist['folder'] == 'guide' %} show{% endif %}" id="guidesCollapse">
+              <ul class="navbar-nav ms-3">
+                  {% for entry in navlist['guide'] %}
+                    <li class="nav-item">
+                      <a class="nav-link{% if navlist['folder'] == 'guide' and navlist['page_name'] == entry %} active{% endif %}" href="/guide/{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
+                    </li>
+                  {% endfor %}
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link{% if navlist['page_name'] == 'riotrules' %} active{% endif %}" href="/riotrules">Riot Rules</a></li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#setsCollapse" role="button" aria-expanded="{{ 'true' if navlist['folder'] == 'sets' else 'false' }}" aria-controls="setsCollapse">
+              Sets
+              <span class="ms-1 guide-arrow" id="guideArrowDesktop">{{ '▼' if navlist['folder'] == 'guide' else '▶' }}</span>
+            </a>
+            <div class="collapse{% if navlist['folder'] == 'sets' %} show{% endif %}" id="setsCollapse">
+              <ul class="navbar-nav ms-3">
+                  {% for entry in navlist['sets'] %}
+                    <li class="nav-item">
+                      <a class="nav-link{% if navlist['folder'] == 'sets' and navlist['page_name'] == entry %} active{% endif %}" href="/sets/{{ entry }}">{{ entry }}</a>
+                    </li>
+                  {% endfor %}
+              </ul>
+            </div>
+          </li>
+        </ul>
