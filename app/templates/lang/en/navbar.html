@@ -19,7 +19,7 @@
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#setsCollapse" role="button" aria-expanded="{{ 'true' if navlist['folder'] == 'sets' else 'false' }}" aria-controls="setsCollapse">
               Sets
-              <span class="ms-1 guide-arrow" id="guideArrowDesktop">{{ '▼' if navlist['folder'] == 'guide' else '▶' }}</span>
+              <span class="ms-1 guide-arrow" id="setsArrowDesktop">{{ '▼' if navlist['folder'] == 'guide' else '▶' }}</span>
             </a>
             <div class="collapse{% if navlist['folder'] == 'sets' %} show{% endif %}" id="setsCollapse">
               <ul class="navbar-nav ms-3">
