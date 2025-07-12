@@ -1,5 +1,7 @@
 /* Custom styles for Riftbound FAQ */
-
+html {
+  scroll-padding-top: 100px; /* Adjust based on your header's height */
+}
 .sidebar {
   min-height: 100vh;
   background: #343a40;
@@ -118,7 +120,7 @@ body.dark-mode .site-footer a:hover {
 /* Banner styles */
 .site-banner {
   width: 100%;
-  background: linear-gradient(90deg, #23272b 0%, #6a82fb 100%) !important;
+  background: linear-gradient(90deg, rgba(34,39,43,0.28) 0%, rgba(106,130,251,0.32) 100%);
   color: #fff;
   text-align: center;
   padding: 2rem 1rem 1.2rem 1rem;
@@ -131,6 +133,14 @@ body.dark-mode .site-footer a:hover {
   top: 0;
   left: 0;
   z-index: 102;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0 0 18px 18px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgba(255,255,255,0.25);
+  background-clip: padding-box;
 }
 .site-banner .banner-title {
   margin: 0;
@@ -138,10 +148,14 @@ body.dark-mode .site-footer a:hover {
   text-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 body.dark-mode .site-banner {
-  background: linear-gradient(90deg, #23272b 0%, #6a82fb 100%) !important;
+  background: linear-gradient(90deg, rgba(34,39,43,0.38) 0%, rgba(106,130,251,0.38) 100%);
   color: #e0e0e0;
-  border-bottom: 2px solid #23272b;
+  border-bottom: 2px solid rgba(34,39,43,0.35);
   box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0 0 18px 18px;
+  background-clip: padding-box;
 }
 body.dark-mode .site-banner .banner-title {
   color: #e0e0e0;
@@ -275,4 +289,23 @@ body.dark-mode .nav-link.active {
   .sidebar-toggle-btn {
     display: none !important;
   }
+}
+.card-link-with-preview {
+  position: relative;
+  text-decoration: underline;
+}
+.card-image-preview {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 10;
+  background: #222;
+  border: 1px solid #888;
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.card-link-with-preview:hover .card-image-preview {
+  display: block;
 }

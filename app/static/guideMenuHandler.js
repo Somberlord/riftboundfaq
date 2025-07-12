@@ -22,4 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
       guideArrowMobile.innerHTML = '\u25B6'; // ▶
     });
   }
+  // Arrow toggle for Sets menu (desktop)
+  var setsCollapse = document.getElementById('setsCollapse');W
+  var setsArrowDesktop = document.getElementById('setsArrowDesktop');
+  if (setsCollapse && setsArrowDesktop) {
+    setsCollapse.addEventListener('show.bs.collapse', function () {
+      setsArrowDesktop.innerHTML = '\u25BC'; // ▼
+    });
+    setsCollapse.addEventListener('hide.bs.collapse', function () {
+      setsArrowDesktop.innerHTML = '\u25B6'; // ▶
+    });
+  }
 });
