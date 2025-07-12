@@ -3,4 +3,8 @@ faq_list:
   - cards:
     - OGN-102
     errata: "[OGN-102] Should read : Banish a friendly unit, then its owner plays it to base, ignoring its cost."
+  - cards:
+    - OGS-020
+    errata: "[OGS-020] Should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
+    
 ...
