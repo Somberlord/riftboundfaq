@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   // Arrow toggle for Sets menu (desktop)
-  var setsCollapse = document.getElementById('setsCollapse');W
+  var setsCollapse = document.getElementById('setsCollapse');
   var setsArrowDesktop = document.getElementById('setsArrowDesktop');
   if (setsCollapse && setsArrowDesktop) {
     setsCollapse.addEventListener('show.bs.collapse', function () {

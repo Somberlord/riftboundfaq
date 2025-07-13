@@ -1,5 +1,5 @@
 import yaml
-import app.file_utils as file_utils
+import app.utils.file_utils as file_utils
 
 FAQ_COMMON_ROOT = "faq_list"
 FAQ_CARD_LIST = "cards"

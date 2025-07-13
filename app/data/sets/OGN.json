@@ -5,7 +5,7 @@
     "totalCards": 310,
     "useLightbox": true,
     "showSearchBar": false,
-    "buildDate": "2025-07-07",
+    "buildDate": "2025-07-11",
     "set": "OGN"
   },
   "items": [
@@ -180,12 +180,7 @@
     {
       "number": 29,
       "id": "OGN-029",
-      "flags": [
-        {
-          "id": "new",
-          "label": "NEW"
-        }
-      ],
+      "flags": [],
       "orientation": "portrait",
       "title": "Falling Star",
       "altText": "Riftbound. Falling Star. Rarity: Rare. Color: Red. Type: Spell. Super: None. Tags: None. How to play this card: Do this twice: Deal 3 to a unit. You can choose different units."
@@ -407,6 +402,19 @@
       "altText": "Riftbound. Eclipse Herald. Rarity: Uncommon. Color: Green. Type: Unit. Super: None. Tags: Bird. How to play this card: When you stun an enemy unit, ready me and give me +1 S this turn."
     },
     {
+      "number": 61,
+      "id": "OGN-061",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Poro Herder",
+      "altText": "Riftbound. Poro Herder. Rarity: Uncommon. Color: Green. Type: Unit. Super: None. Tags: None. How to play this card: When you play me, if you control a Poro, buff me and draw 1. If I don't have a buff, I get a +1 S buff."
+    },
+    {
       "number": 63,
       "id": "OGN-063",
       "flags": [],
@@ -509,6 +517,32 @@
       "orientation": "portrait",
       "title": "Lee Sin, Ascetic",
       "altText": "Riftbound. Lee Sin, Ascetic. Rarity: Epic. Color: Green. Type: Unit. Super: Champion. Tags: Lee Sin. How to play this card: No instructions provided."
+    },
+    {
+      "number": 79,
+      "id": "OGN-079",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Leona, Zealot",
+      "altText": "Riftbound. Leona, Zealot. Rarity: Epic. Color: Green. Type: Unit. Super: Champion. Tags: Leona. How to play this card: If an opponent's score is within 3 points of the Victory Score, I enter ready.\n Stunned enemy units here have -8 S, to a minimum of 1 S."
+    },
+    {
+      "number": 79,
+      "id": "OGN-079a",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Leona, Zealot (alt)",
+      "altText": "Riftbound. Leona, Zealot (alt). Rarity: Epic. Color: Green. Type: Unit. Super: Champion. Tags: Leona. How to play this card: No instructions provided."
     },
     {
       "number": 81,
@@ -663,14 +697,17 @@
       "altText": "Riftbound. Singularity. Rarity: Uncommon. Color: Blue. Type: Spell. Super: None. Tags: None. How to play this card: Deal 6 to each of up to two units."
     },
     {
+      "number": 107,
+      "id": "OGN-107",
+      "flags": [],
+      "orientation": "portrait",
+      "title": "Ava Achiever",
+      "altText": "Riftbound. Ava Achiever. Rarity: Rare. Color: Blue. Type: Unit. Super: None. Tags: Yordle. How to play this card: When I attack, you may pay C to play a card with Hidden from your hand here, ignoring its cost."
+    },
+    {
       "number": 109,
       "id": "OGN-109",
-      "flags": [
-        {
-          "id": "new",
-          "label": "NEW"
-        }
-      ],
+      "flags": [],
       "orientation": "portrait",
       "title": "Dr. Mundo, Expert",
       "altText": "Riftbound. Dr. Mundo, Expert. Rarity: Rare. Color: Blue. Type: Unit. Super: Champion. Tags: Dr. Mundo. How to play this card: My Might is increased by the number of cards in your trash.\n At the start of your Beginning Phase, recycle 3 from your trash."
@@ -718,12 +755,7 @@
     {
       "number": 114,
       "id": "OGN-114",
-      "flags": [
-        {
-          "id": "new",
-          "label": "NEW"
-        }
-      ],
+      "flags": [],
       "orientation": "portrait",
       "title": "Progress Day",
       "altText": "Riftbound. Progress Day. Rarity: Rare. Color: Blue. Type: Spell. Super: None. Tags: None. How to play this card: Draw 4."
@@ -977,6 +1009,14 @@
       "altText": "Riftbound. Carnivorous Snapvine. Rarity: Rare. Color: Orange. Type: Unit. Super: None. Tags: None. How to play this card: When you play me, choose an enemy unit at a battlefield. We deal damage equal to our Mights to each other."
     },
     {
+      "number": 150,
+      "id": "OGN-150",
+      "flags": [],
+      "orientation": "portrait",
+      "title": "Kraken Hunter",
+      "altText": "Riftbound. Kraken Hunter. Rarity: Rare. Color: Orange. Type: Unit. Super: None. Tags: Pirate. How to play this card: Accelerate You may pay 1C as an additional cost to have me enter ready.\n Assault +1 S while I'm an attacker.\n As you play me, you may spend any number of buffs as an additional cost. Reduce my cost by C for each buff you spend."
+    },
+    {
       "number": 152,
       "id": "OGN-152",
       "flags": [],
@@ -1081,6 +1121,32 @@
       "altText": "Riftbound. Seal of Strength. Rarity: Epic. Color: Orange. Type: Gear. Super: None. Tags: None. How to play this card: T: Reaction: Add C. Abilities that add resources can't be reacted to."
     },
     {
+      "number": 164,
+      "id": "OGN-164",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Sett, Brawler",
+      "altText": "Riftbound. Sett, Brawler. Rarity: Epic. Color: Orange. Type: Unit. Super: Champion. Tags: Sett. How to play this card: When I'm played and when I conquer, buff me. If I don't have a buff, I get a +1 S buff.\n Spend my buff: Give me +4 S this turn."
+    },
+    {
+      "number": 164,
+      "id": "OGN-164a",
+      "flags": [
+        {
+          "id": "new",
+          "label": "NEW"
+        }
+      ],
+      "orientation": "portrait",
+      "title": "Sett, Brawler (alt)",
+      "altText": "Riftbound. Sett, Brawler (alt). Rarity: Epic. Color: Orange. Type: Unit. Super: Champion. Tags: Sett. How to play this card: When I'm played and when I conquer, buff me. If I don't have a buff, I get a +1 S buff.\n Spend my buff: Give me +4 S this turn."
+    },
+    {
       "number": 165,
       "id": "OGN-165",
       "flags": [],
@@ -1107,12 +1173,7 @@
     {
       "number": 168,
       "id": "OGN-168",
-      "flags": [
-        {
-          "id": "new",
-          "label": "NEW"
-        }
-      ],
+      "flags": [],
       "orientation": "portrait",
       "title": "Fight or Flight",
       "altText": "Riftbound. Fight or Flight. Rarity: Common. Color: Purple. Type: Spell. Super: None. Tags: None. How to play this card: Hidden Hide now for A to react with later for 0.\n Action Play on your turn or in showdowns.\n Move a unit from a battlefield to its base."
@@ -1480,12 +1541,7 @@
     {
       "number": 230,
       "id": "OGN-230",
-      "flags": [
-        {
-          "id": "new",
-          "label": "NEW"
-        }
-      ],
+      "flags": [],
       "orientation": "portrait",
       "title": "Albus Ferros",
       "altText": "Riftbound. Albus Ferros. Rarity: Rare. Color: Yellow. Type: Unit. Super: None. Tags: None. How to play this card: When you play me, spend any number of buffs. For each buff spent, channel 1 rune exhausted."
@@ -1585,6 +1641,14 @@
       "orientation": "portrait",
       "title": "Darius, Executioner (alt)",
       "altText": "Riftbound. Darius, Executioner (alt). Rarity: Epic. Color: Yellow. Type: Unit. Super: Champion. Tags: Darius,Trifarian. How to play this card: Legion: When you play me, ready me. Get the effect if you've played another card this turn\n Other friendly units have +1 S here."
+    },
+    {
+      "number": 244,
+      "id": "OGN-244",
+      "flags": [],
+      "orientation": "portrait",
+      "title": "Divine Judgment",
+      "altText": "Riftbound. Divine Judgment. Rarity: Epic. Color: Yellow. Type: Spell. Super: None. Tags: None. How to play this card: Each player chooses 2 units, 2 gear, 2 runes, and 2 cards in their hands. Recycle the rest."
     },
     {
       "number": 245,
@@ -1897,6 +1961,14 @@
       "orientation": "landscape",
       "title": "The Candlelit Sanctum",
       "altText": "Riftbound. The Candlelit Sanctum. Rarity: Uncommon. Color: Colorless. Type: Battlefield. Super: None. Tags: None. How to play this card: When you conquer here, look at the top two cards of your Main Deck. You may recycle one or both of them. Put those you don't back in any order."
+    },
+    {
+      "number": 292,
+      "id": "OGN-292",
+      "flags": [],
+      "orientation": "landscape",
+      "title": "The Dreaming Tree",
+      "altText": "Riftbound. The Dreaming Tree. Rarity: Uncommon. Color: Colorless. Type: Battlefield. Super: None. Tags: None. How to play this card: The first time you choose a friendly unit with a spell here each turn, draw 1."
     },
     {
       "number": 293,

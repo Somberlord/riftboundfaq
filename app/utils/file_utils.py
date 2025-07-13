@@ -37,14 +37,19 @@ def list_folder_files(folder_path):
             result.append(filename)
     return result
 
-
-
-def list_faq_files():
-    from pathlib import Path
+def list_raw_files(folder_path):
     result = list()
-    folder_path = os.path.join(BASE_DATA_PATH, 'faq')
     files = os.listdir(folder_path)
     for file in files:
         filepath = os.path.join(folder_path, file)
         result.append(filepath)
     return result
+
+def list_faq_files():
+    folder_path = os.path.join(BASE_DATA_PATH, 'faq')
+    return list_raw_files(folder_path)
+
+
+def list_sets_files():
+    folder_path = os.path.join(BASE_DATA_PATH, 'sets')
+    return list_raw_files(folder_path)

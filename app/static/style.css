@@ -292,7 +292,6 @@ body.dark-mode .nav-link.active {
 }
 .card-link-with-preview {
   position: relative;
-  text-decoration: underline;
 }
 .card-image-preview {
   display: none;
