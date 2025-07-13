@@ -1,6 +1,6 @@
 from flask import render_template, abort
-from app.faq import FAQ
-import app.file_utils as file_utils
+from app.utils.faq import FAQ
+import app.utils.file_utils as file_utils
 import json
 
 DEFAULT_LANGUAGE='en'
