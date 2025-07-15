@@ -17,7 +17,7 @@
   {% else %}
     {% for item in faq[card.id] %}
       {% if 'errata' in item %}
-      <p><strong>Errata : </strong>{{ item.errata }}</p>
+      <p><strong>Errata : </strong>{{ item.errata|card_id_img|safe }}</p>
       {% endif %}
       {% if question in item %}
       <p>Q: {{ item.question }}</p>
