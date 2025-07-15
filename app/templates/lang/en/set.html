@@ -4,13 +4,20 @@
 <div class="container my-4 themed-list-container">
   <h1 class="mb-4">Riftbound FAQ - Set {{ rbset.config.set }}</h1>
   {% for card in rbset["items"] %}
-  <h3 class="mt-4 mb-2 ml-2">[{{ card.id }}] {{ card.title }}</h3>
+  <h3 class="mt-4 mb-2 ml-2">
+    <a href="https://cdn.piltoverarchive.com/cards/{{ card.id }}.webp" target="_blank" class="card-link-with-preview">
+      [{{ card.id }}] {{ card.title }}
+      <span class="card-image-preview">
+        <img src="https://cdn.piltoverarchive.com/cards/{{ card.id }}.webp" alt="{{ card.title }}" style="max-width:200px; max-height:300px; display:block;" />
+      </span>
+    </a>
+  </h3>
   {% if card.id not in faq %}
   <p>There is no FAQ yet for this card.</p>
   {% else %}
     {% for item in faq[card.id] %}
       {% if 'errata' in item %}
-      <p><strong>Errata : </strong>{{ item.errata|card_id_img|safe }}</p>
+      <p><strong>Errata : </strong>{{ item.errata }}</p>
       {% endif %}
       {% if question in item %}
       <p>Q: {{ item.question }}</p>

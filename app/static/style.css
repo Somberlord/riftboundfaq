@@ -5,6 +5,7 @@ html {
 .sidebar {
   min-height: 100vh;
   background: #343a40;
+  padding: 0;
 }
 .sidebar a {
   color: white;
@@ -135,7 +136,7 @@ body.dark-mode .site-footer a:hover {
   z-index: 102;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 0 0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -154,7 +155,7 @@ body.dark-mode .site-banner {
   box-shadow: 0 2px 12px rgba(0,0,0,0.18);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 0 0 18px 18px;
+  border-radius: 0 0 0 0;
   background-clip: padding-box;
 }
 body.dark-mode .site-banner .banner-title {
