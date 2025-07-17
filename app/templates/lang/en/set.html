@@ -12,6 +12,9 @@
       {% if 'errata' in item %}
       <p><strong>Errata : </strong>{{ item.errata|card_id_img|safe }}</p>
       {% endif %}
+      {% if 'note' in item %}
+      <p><strong>Note : </strong>{{ item.note|card_id_img|safe }}</p>
+      {% endif %}
       {% if question in item %}
       <p>Q: {{ item.question }}</p>
       <p>A: Here is the answer.</p>
