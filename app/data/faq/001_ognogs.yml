@@ -11,7 +11,7 @@ faq_list:
     note: "[OGN-259] ability triggers all Move Trigger Abilities, like [OGN-162] or [OGN-185]."
   - cards:
     - OGN-259
-    note: "In 2v2, a player can't move his ally units with[OGN-259] ability."
+    note: "In 2v2, a player can't move his ally units with [OGN-259] ability."
   # All moves
   - cards:
     - OGN-259

@@ -4,13 +4,11 @@ from app.utils.card_db import CardDB
 def format_card_image(string: str):
     # Find cards occurence in string
     regex = r'\[([A-Z]{3}-[0-9]{3}a?)]'
-    result = re.search(regex, string)
+    cards = re.findall(regex, string)
     result_str = string
-    if result is None:
-        return string
-    cards = result.groups()
     card_db = CardDB.get_instance().card_db
     for card in cards:
+        print(cards)
         if card in card_db:
             result_str = replace_card_with_html(result_str, card_db[card])
     return result_str
@@ -22,8 +20,6 @@ def replace_card_with_html(string: str, card_data):
     f'alt="{ card_title }" style="max-width:200px; max-height:300px; display:block;" /></span>'
     icon_str = f'<a href="https://cdn.piltoverarchive.com/cards/{ card_id }.webp" target="_blank" class="card-link-with-preview"><img class="might-icon" src="/static/images/zoom.webp" data-light="/static/images/zoom.webp" ' \
     f'data-dark="/static/images/zoom_darkmode.webp" alt="Zoom" style="height:1em; vertical-align:middle;">{inner_span}</a>'
-    replace_str = f'{card_title} {icon_str}'
-    print(string)
+    replace_str = f'<i>{card_title}</i> {icon_str}'
     new_string = string.replace(f'[{card_data['id']}]', replace_str)
-    print(new_string)
     return new_string
