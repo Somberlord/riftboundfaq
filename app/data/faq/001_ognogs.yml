@@ -1,19 +1,33 @@
 ---
 faq_list:
+  # All moves keep exhausted state
+  - cards:
+    - OGN-043
+    - OGN-259
+    note: "Units moved by a Non-Standard Move effect stays in the Ready/Exhausted state they were, unless specified otherwise."
+  # All moves battlefield from battlefield
+  - cards:
+    - OGN-043
+    note: "Units moved by a Non-Standard Move effect may move between battlefields, even without ganking, unless specified otherwise."
+  - cards: 
+    - OGN-027
+    note: "When [OGN-027] is the second card played in a turn, he gets +2 Might and is ready."
   - cards:
     - OGN-102
     errata: "[OGN-102] should read : Banish a friendly unit, then its owner plays it to base, ignoring its cost."
   - cards:
-    - OGS-020
-    errata: "[OGS-020] should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
+    - OGN-131
+    errata: "[OGN-131] should read : When I attack, if there is a ready enemy unit here, give me +2 Might until the end of turn"
+  - cards:
+    - OGN-160
+    note: "If a Unit played by [OGN-160] comes into an uncontrolled battlefield (thanks to [OGN-161] or [OGN-193] for example) a showdown starts there when the chain is empty. End of turn triggers will not trigger again on this turn."
   - cards:
     - OGN-259
     note: "[OGN-259] ability triggers all Move Trigger Abilities, like [OGN-162] or [OGN-185]."
   - cards:
     - OGN-259
     note: "In 2v2, a player can't move his ally units with [OGN-259] ability."
-  # All moves
   - cards:
-    - OGN-259
-    note: "Units moved by a Non-Standard Move effect stays in the Ready/Exhausted state they were, unless specified otherwise"
+    - OGS-020
+    errata: "[OGS-020] should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
 ...
