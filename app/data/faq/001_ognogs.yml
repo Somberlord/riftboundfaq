@@ -9,6 +9,11 @@ faq_list:
   - cards:
     - OGN-043
     note: "Units moved by a Non-Standard Move effect may move between battlefields, even without ganking, unless specified otherwise."
+  # Base spell cost
+  - cards:
+    - OGS-006
+    - OGS-021
+    note: "Spells costs refer to printed cost."
   - cards: 
     - OGN-027
     note: "When [OGN-027] is the second card played in a turn, he gets +2 Might and is ready."
@@ -27,6 +32,10 @@ faq_list:
   - cards:
     - OGN-259
     note: "In 2v2, a player can't move his ally units with [OGN-259] ability."
+  - cards:
+    - OGS-010
+    - OGN-062
+    errata: "If you play [OGS-010] with [OGN-062], you can get back [OGN-062] from the trash. The play trigger resolves when the spell is already in the trash."
   - cards:
     - OGS-020
     errata: "[OGS-020] should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
