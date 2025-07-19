@@ -35,7 +35,7 @@ faq_list:
   - cards:
     - OGS-010
     - OGN-062
-    errata: "If you play [OGS-010] with [OGN-062], you can get back [OGN-062] from the trash. The play trigger resolves when the spell is already in the trash."
+    note: "If you play [OGS-010] with [OGN-062], you can get back [OGN-062] from the trash. The play trigger resolves when the spell is already in the trash."
   - cards:
     - OGS-020
     errata: "[OGS-020] should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
