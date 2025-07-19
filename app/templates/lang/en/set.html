@@ -4,22 +4,25 @@
 <div class="container my-4 themed-list-container">
   <h1 class="mb-4">Riftbound FAQ - Set {{ rbset.config.set }}</h1>
   {% for card in rbset["items"] %}
-  <h3 class="mt-4 mb-2 ml-2">[{{ card.id }}] {{ card.title }}</h3>
-  {% if card.id not in faq %}
-  <p>There is no FAQ yet for this card.</p>
-  {% else %}
-    {% for item in faq[card.id] %}
-      {% if 'errata' in item %}
-      <p><strong>Errata : </strong>{{ item.errata|card_id_img|safe }}</p>
-      {% endif %}
-      {% if 'note' in item %}
-      <p><strong>Note : </strong>{{ item.note|card_id_img|safe }}</p>
-      {% endif %}
-      {% if question in item %}
-      <p>Q: {{ item.question }}</p>
-      <p>A: Here is the answer.</p>
-      {% endif %}
-    {% endfor %}
+  {# Only display base version of cards #}
+  {% if card.id | is_root_card %}
+    <h3 class="mt-4 mb-2 ml-2">[{{ card.id }}] {{ card.title }}</h3>
+    {% if card.id not in faq %}
+    <p>There is no FAQ yet for this card.</p>
+    {% else %}
+      {% for item in faq[card.id] %}
+        {% if 'errata' in item %}
+        <p><strong>Errata : </strong>{{ item.errata|card_id_img|safe }}</p>
+        {% endif %}
+        {% if 'note' in item %}
+        <p><strong>Note : </strong>{{ item.note|card_id_img|safe }}</p>
+        {% endif %}
+        {% if question in item %}
+        <p>Q: {{ item.question }}</p>
+        <p>A: Here is the answer.</p>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
   {% endif %}
   {% endfor %}
 </div>

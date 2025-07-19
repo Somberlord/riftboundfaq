@@ -3,12 +3,11 @@ from app.utils.card_db import CardDB
 
 def format_card_image(string: str):
     # Find cards occurence in string
-    regex = r'\[([A-Z]{3}-[0-9]{3}a?)]'
+    regex = r'\[([A-Z]{3}-[0-9]{3}[as]?)\]'
     cards = re.findall(regex, string)
     result_str = string
     card_db = CardDB.get_instance().card_db
     for card in cards:
-        print(cards)
         if card in card_db:
             result_str = replace_card_with_html(result_str, card_db[card])
     return result_str

@@ -2,10 +2,15 @@ from flask import render_template
 from app import app
 import app.utils.page_loader as page_loader
 import app.utils.formatter as formatter
+import re
 
 @app.template_filter('card_id_img')
 def card_id_img_filter(text):
     return formatter.format_card_image(text)
+
+@app.template_filter('is_root_card')
+def is_root_card(text):
+    return re.fullmatch('[A-Z]{3}-[0-9]{3}', text)
 
 
 @app.route('/')
