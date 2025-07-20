@@ -27,6 +27,9 @@ faq_list:
     - OGN-160
     note: "If a Unit played by [OGN-160] comes into an uncontrolled battlefield (thanks to [OGN-161] or [OGN-193] for example) a showdown starts there when the chain is empty. End of turn triggers will not trigger again on this turn."
   - cards:
+    - OGN-242
+    note: "[OGN-242] uses the current might of the killed unit, but ignores only printed cost of the played unit."
+  - cards:
     - OGN-259
     note: "[OGN-259] ability triggers all Move Trigger Abilities, like [OGN-162] or [OGN-185]."
   - cards:
@@ -38,5 +41,5 @@ faq_list:
     note: "If you play [OGS-010] with [OGN-062], you can get back [OGN-062] from the trash. The play trigger resolves when the spell is already in the trash."
   - cards:
     - OGS-020
-    errata: "[OGS-020] should read : Choose a friendly unit. The next time id would die this turn, recall it exhausted instead."
+    errata: "[OGS-020] should read : Choose a friendly unit. The next time it would die this turn, recall it exhausted instead."
 ...
