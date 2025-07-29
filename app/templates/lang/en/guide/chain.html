@@ -1,0 +1,51 @@
+{% extends "lang/en/base.html" %}
+
+{% block content %}
+<div class="container my-4 themed-list-container">
+    <h2 class="mb-3">The Chain</h2>
+    <ul>
+    <li>The chain is a zone that <strong>temporarily exists</strong> while cards are played or abilities are active<ul>
+    <li>Cards are placed on the chain as the first step when playing a card</li>
+    <li>Abilities are placed on the chain when they are activated or triggered</li>
+    </ul>
+    </li>
+    <li>It exists only as long cards and abilities are on it</li>
+    <li>There can only ever be <strong>one</strong> chain<ul>
+    <li>If cards or abilities are played while a chain exists, they get <strong>added</strong> to the existing chain</li>
+    </ul>
+    </li>
+    <li>Movement does not create a chain unless it triggers abilities</li>
+    </ul>
+    <h2 id="resolving-the-chain">Resolving the Chain</h2>
+    <p>To resolve a chain, <strong>repeat the following steps</strong> until the chain is empty:</p>
+    <blockquote>
+    <h2 id="permanent-card">Permanent Card</h2>
+    <p>If a unit or gear is the most recent item, no player receives priority. </p>
+    <ul>
+    <li>The card leaves the chain and becomes a permanent in the location it was played to</li>
+    <li>Abilities from playing a card trigger and are either added to the chain or create a new one</li>
+    <li>A cleanup is performed</li>
+    </ul>
+    <h2 id="spell-card-or-ability">Spell Card or Ability</h2>
+    <p>If the most recent item is a spell or ability, the controller of it becomes the active player. The <strong>active player</strong> is the player who has <strong>priority</strong> and can do the following:</p>
+    <ul>
+    <li>Play reaction cards or activate reaction abilities <ul>
+    <li>The reaction will be added to the chain on top of the existing cards and abilities</li>
+    </ul>
+    </li>
+    <li>Invite players to act<ul>
+    <li>If not all players are relevant, non-relevant players can be invited to act</li>
+    <li>Invitations may be refused</li>
+    <li>If accepted, the invited player becomes the active player and must play a spell or activate an ability right away</li>
+    </ul>
+    </li>
+    <li>Pass priority  <ul>
+    <li>The next relevant player in turn order becomes the active player and receives priority
+    If the active player does any of these things besides passing, <strong>restart</strong> at the beginning of &quot;Resolving the Chain&quot;.</li>
+    </ul>
+    </li>
+    </ul>
+    <p>If all relevant players pass, the most recent item on the chain <strong>resolves</strong>. 
+    A cleanup is performed. If there are still items on the chain, <strong>return</strong> to &quot;Resolving the Chain&quot;.</p>
+</div>
+{% endblock %}
