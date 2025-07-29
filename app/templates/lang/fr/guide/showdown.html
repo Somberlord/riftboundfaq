@@ -2,54 +2,54 @@
 
 {% block content %}
 <div class="container my-4 themed-list-container">
-  <h2 class="mb-3">Showdown</h2>
+  <h2 class="mb-3">Confrontation (Showdown)</h2>
 
-  <p>Showdown occurs when a battlefield (BF) becomes contested</p>
+  <p>La confrontation (Showdown) a lieu lorsqu’un champ de bataille (BF) devient contesté.</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">If the BF is uncontrolled, an open showdown without combat occurs</li>
-    <li class="list-group-item">If the BF is controlled by <strong>another player</strong>, <a href="https://discord.com/channels/1314690307811577887/1384871668429623388">Combat</a> occurs with showdown as a part of it</li>
-    <li class="list-group-item">If the showdown is part of combat, the <strong>attacker</strong> and <strong>defender</strong> are the relevant players
+    <li class="list-group-item">Si le BF est sans contrôle, une confrontation ouverte sans combat a lieu.</li>
+    <li class="list-group-item">Si le BF est contrôlé par <strong>un autre joueur </strong>, un <a href="https://discord.com/channels/1314690307811577887/1384871668429623388">combat </a> a lieu, la confrontation en faisant partie.</li>
+    <li class="list-group-item">Si la confrontation fait partie du combat, l’<strong>attaquant </strong> et le <strong>défenseur </strong> sont les joueurs concernés
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Others may become relevant if <strong>triggers</strong> they control happen during showdown or if they are <strong>invited</strong> by a relevant player</li>
-        <li class="list-group-item">The attacker is the controller of the unit that <strong>applied the contested status</strong> to the BF</li>
+        <li class="list-group-item">D’autres joueurs peuvent devenir concernés si des <strong>déclencheurs (triggers)</strong> qu’ils contrôlent se produisent pendant la confrontation, ou s’ils sont <strong>invités (invited)</strong> par un joueur concerné.</li>
+        <li class="list-group-item">L’attaquant est le contrôleur de l’unité qui a <strong>appliqué le statut contesté </strong> au BF.</li>
       </ul>
     </li>
-    <li class="list-group-item">If the showdown is not part of combat, <strong>all players</strong> are relevant players</li>
+    <li class="list-group-item">Si la confrontation ne fait pas partie d’un combat, <strong>tous les joueurs </strong> sont concernés.</li>
   </ul>
 
-  <p><em>Visualisation of Showdown:</em> <a href="https://discord.com/channels/1314690307811577887/1384868482268528690/1385730020168699944">Link</a></p>
+  <p><em>Visualisation de la confrontation (Showdown) :</em> <a href="https://discord.com/channels/1314690307811577887/1384868482268528690/1385730020168699944">Lien</a></p>
 
-  <p>If the showdown is part of <strong>combat</strong>, it may begin with an <strong>initial chain</strong>:</p>
+  <p>Si la confrontation fait partie d’un <strong>combat </strong>, elle peut commencer par une <strong>chaîne initiale </strong> :</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">"When I attack" triggers are put on the chain <strong>first</strong></li>
-    <li class="list-group-item">"When I defend" triggers are put <strong>on top</strong></li>
-    <li class="list-group-item">Players may react</li>
+    <li class="list-group-item">Les déclencheurs « Quand j’attaque (When I attack) » sont placés en <strong>premier </strong> dans la chaîne.</li>
+    <li class="list-group-item">Les déclencheurs « Quand je défends (When I defend) » sont placés <strong>au-dessus </strong>.</li>
+    <li class="list-group-item">Les joueurs peuvent réagir.</li>
   </ul>
 
-  <p>After the initial chain is resolved, focus goes to the player that contested the BF. A player with focus may do one of the following things:</p>
+  <p>Une fois la chaîne initiale résolue, le focus revient au joueur qui a contesté le BF. Un joueur ayant le focus peut faire une des actions suivantes :</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Play an action or reaction spell</li>
-    <li class="list-group-item">Activate legally timed <strong>abilities</strong>
+    <li class="list-group-item">Jouer un sort d’action ou de réaction (action or reaction spell).</li>
+    <li class="list-group-item">Activer des <strong>capacités (abilities)</strong> légales dans le timing
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Cards or abilities will start a <strong>chain</strong>, at the end of which focus will pass to the next relevant player</li>
+        <li class="list-group-item">Les cartes ou capacités lancent une <strong>chaîne </strong>, à la fin de laquelle le focus passe au joueur concerné suivant.</li>
       </ul>
     </li>
-    <li class="list-group-item">Invite players to act
+    <li class="list-group-item">Inviter des joueurs à agir
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Invitations may be <strong>refused</strong></li>
-        <li class="list-group-item">If accepted, the invited player gains focus and <strong>must</strong> play a spell or activate an ability <strong>right away</strong></li>
+        <li class="list-group-item">Les invitations peuvent être <strong>refusées </strong>.</li>
+        <li class="list-group-item">Si acceptées, le joueur invité gagne le focus et <strong>doit </strong> jouer un sort ou activer une capacité <strong>immédiatement </strong>.</li>
       </ul>
     </li>
-    <li class="list-group-item">Pass focus</li>
+    <li class="list-group-item">Passer le focus .</li>
   </ul>
 
-  <p>When all relevant players have <strong>passed</strong> in succession, showdown ends and a <strong>cleanup</strong> occurs.  
-  If there was no combat and the unit is still at the BF, it is <strong>conquered</strong></p>
+  <p>Lorsque tous les joueurs concernés ont <strong>passé </strong> consécutivement, la confrontation se termine et un <strong>nettoyage (cleanup)</strong> a lieu.  
+  S’il n’y a pas eu de combat et que l’unité est toujours sur le BF, elle est <strong>conquise (conquered)</strong>.</p>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">If the player has already scored a point on that BF <strong>this turn</strong> (for example by <strong>holding</strong> it), the BF is <strong>not</strong> conquered again. No point is awarded and "When you conquer" triggers do not trigger.</li>
+    <li class="list-group-item">Si le joueur a déjà scoré un point sur ce BF <strong>ce tour-ci </strong> (par exemple en le <strong>contrôlant (holding)</strong>, le BF n’est <strong>pas </strong> reconquis. Aucun point n’est attribué et les déclencheurs « Quand vous conquérez (When you conquer) » ne se déclenchent pas.</li>
   </ul>
 
-  <h3>Relevant CRD Rules:</h3>
-  <p><em>528. Relevant Players<br>545. Showdown<br>630.1. Conquering</em></p>
+  <h3>Règles CRD pertinentes :</h3>
+  <p><em>528. Joueurs concernés (Relevant Players)<br>545. Confrontation (Showdown)<br>630.1. Conquête (Conquering)</em></p>
 </div>
 {% endblock %}
