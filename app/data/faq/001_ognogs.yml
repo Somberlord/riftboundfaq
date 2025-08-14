@@ -25,7 +25,7 @@ faq_list:
     errata: "[OGN-005] should read : [ACTION] Deal 3 to a unit at a battlefield. If this kills it, do this: draw 1."
   - cards:
     - OGN-023
-    errata: "[OGN-023] should read : Discard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay C to heal it, exhaust it, and recall it instead."
+    errata: "[OGN-023] should read : Discard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay [C] to heal it, exhaust it, and recall it instead."
   - cards:
     - OGN-025
     errata: "[OGN-025] should read : [ACTION] Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest."
