@@ -15,6 +15,7 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item"><a class="nav-link{% if navlist['page_name'] == 'docs' %} active{% endif %}" href="/docs">Official Documents</a></li>
           <li class="nav-item"><a class="nav-link{% if navlist['page_name'] == 'riotrules' %} active{% endif %}" href="/riotrules">Riot Rules</a></li>
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#setsCollapse" role="button" aria-expanded="{{ 'true' if navlist['folder'] == 'sets' else 'false' }}" aria-controls="setsCollapse">
