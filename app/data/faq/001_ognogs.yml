@@ -14,18 +14,84 @@ faq_list:
     - OGS-006
     - OGS-021
     note: "Spells costs refer to printed cost."
+  - cards:
+    - OGS-017
+    errata: "[OGS-017] should read : At the end of your turn, ready up to 2 runes."
+  - cards:
+    - OGS-020
+    errata: "[OGS-020] should read : [REACTION] Choose a friendly unit. The next time it dies this turn, heal it, exhaust it, and recall it instead."
+  - cards:
+    - OGN-005
+    errata: "[OGN-005] should read : [ACTION] Deal 3 to a unit at a battlefield. If this kills it, do this: draw 1."
+  - cards:
+    - OGN-023
+    errata: "[OGN-023] should read : Discard 1, [E]: Choose a friendly unit. The next time it would die this turn, you may pay C to heal it, exhaust it, and recall it instead."
+  - cards:
+    - OGN-025
+    errata: "[OGN-025] should read : [ACTION] Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest."
   - cards: 
     - OGN-027
     note: "When [OGN-027] is the second card played in a turn, he gets +2 Might and is ready."
   - cards:
+    - OGN-032
+    errata: "[OGN-032] should read : [E] : The next spell you play this turn deals 1 Bonus Damage."
+  - cards:
+    - OGN-073
+    errata: "[OGN-073] should read : At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes."
+  - cards:
+    - OGN-077
+    errata: "[OGN-077] should read : [HIDDEN] If a friendly unit would die, kill this instead. Heal that unit,  exhaust it, and recall it."
+  - cards:
     - OGN-102
-    errata: "[OGN-102] should read : Banish a friendly unit, then its owner plays it to base, ignoring its cost."
+    errata: "[OGN-102] should read : Banish a friendly unit, then its owner plays it to their base, ignoring its cost."
+  - cards:
+    - OGN-107
+    errata: "[OGN-107] should read : When I attack, you may pay [C] to play a card with [HIDDEN] from your hand, ignoring its cost. If it's a unit, play it here."
+  - cards:
+    - OGN-108
+    errata: "[OGN-108] should read : [REACTION] Choose a friendly unit. This turn, increase its Might to the Might of another friendly unit."
+  - cards:
+    - OGN-115
+    errata: "[OGN-115] should read : Each player looks at the top 5 cards of their Main Deck, banishes one, then recycles the rest. Starting with the next player, each player plays those cards, ignoring Energy costs."
+  - cards:
+    - OGN-118
+    errata: "[OGN-118] should read : The first time another friendly unit dies each turn, draw 1."
+  - cards:
+    - OGN-121
+    errata: "[OGN-121] should read : [HIDDEN] When I defend, choose an enemy unit here and reveal the top 5 cards of your Main Deck. Deal 1 to that unit for each card with [HIDDEN] revealed this way, then recycle the revealed cards."
   - cards:
     - OGN-131
-    errata: "[OGN-131] should read : When I attack, if there is a ready enemy unit here, give me +2 Might until the end of turn"
+    errata: "[OGN-131] should read : When I attack, give me +2 Might this turn if there is a ready enemy unit here."
+  - cards:
+    - OGN-141
+    errata: "[OGN-141] should read : When you play me, buff up to two other friendly units."
+  - cards:
+    - OGN-145
+    errata: "[OGN-145] should read : Prevent all damage that would be dealt this turn by spells and abilities."
   - cards:
     - OGN-160
-    note: "If a Unit played by [OGN-160] comes into an uncontrolled battlefield (thanks to [OGN-161] or [OGN-193] for example) a showdown starts there when the chain is empty. End of turn triggers will not trigger again on this turn."
+    note: "If a Unit played by [OGN-160] comes into an uncontrolled battlefield (thanks to [OGN-161] or [OGN-193] for example) a showdown starts there as soon as the chain is empty. End of turn triggers will not trigger again on this turn."
+  - cards:
+    - OGN-160
+    errata: "[OGN-160] should read : At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest."
+  - cards:
+    - OGN-181
+    errata: "[OGN-181] should read : [[E]: Move a friendly unit at a battlefield to its base."
+  - cards:
+    - OGN-184
+    errata: "[OGN-184] should read : [1], [E]: Return another friendly gear, unit, or facedown card to its owner's hand."
+  - cards:
+    - OGN-194
+    errata: "[OGN-194] should read : [GANKING] As you look at or reveal me from the top of your deck, you may banish me. If you do, you may play me for [A]."
+  - cards:
+    - OGN-199
+    errata: "[OGN-199] should read : [HIDDEN] When you play me, you may choose a unit you control at another location. Move me to its location and it to my original location."
+  - cards:
+    - OGN-227
+    note: "[OGN-227] should read : If a combat where you are the attacker ends in a tie that would recall any of your units, recall all units at that battlefield instead. "
+  - cards:
+    - OGN-235
+    note: "[OGN-235] should read : [VISION] When you recycle one or more cards to your Main Deck, buff a friendly unit."
   - cards:
     - OGN-242
     note: "[OGN-242] uses the current might of the killed unit, but ignores only printed cost of the played unit."
@@ -34,12 +100,29 @@ faq_list:
     note: "[OGN-259] ability triggers all Move Trigger Abilities, like [OGN-162] or [OGN-185]."
   - cards:
     - OGN-259
-    note: "In 2v2, a player can't move his ally units with [OGN-259] ability."
+    errata: "[OGN-259] should read : [2],[E]: Move a friendly unit to or from its base."
   - cards:
     - OGS-010
     - OGN-062
     note: "If you play [OGS-010] with [OGN-062], you can get back [OGN-062] from the trash. The play trigger resolves when the spell is already in the trash."
   - cards:
-    - OGS-020
-    errata: "[OGS-020] should read : Choose a friendly unit. The next time it would die this turn, recall it exhausted instead."
+    - OGN-242
+    errata: "[OGN-242] should read : [1][C], [E]: Kill a friendly unit. Look at the top 5 cards of your Main Deck. You may banish a unit from among them that has Might up to 1 more than the killed unit and play it,ignoring its cost. Then recycle the rest."
+  - cards:
+    - OGN-258
+    errata: "[OGN-258] should read : Move an enemy unit. Then do this: Choose another enemy unit at its destination. They deal damage equal to their Mights to each other."
+  - cards:
+    - OGN-269
+    errata: "[OGN-269] should read : If a buffed unit you control would die, you may pay [C], exhaust me, and spend its buff to heal it, exhaust it, and recall it instead. When you conquer, ready me."
+  - cards:
+    - OGN-287
+    errata: "[OGN-287] should read : When you conquer here, you must recycle one of your runes."
+  - cards:
+    - OGN-289
+    errata: "[OGN-289] should read : When you conquer here, ready up to 2 runes at the end of this turn."
+  - cards:
+    - OGN-296
+    errata: "[OGN-296] should read : Spells and abilities deal 1 Bonus Damage to units here."
+  
+
 ...
