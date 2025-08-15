@@ -76,10 +76,10 @@ faq_list:
     errata: "[OGN-160] should read : At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit and banish it. Play it, ignoring its cost, and recycle the rest."
   - cards:
     - OGN-181
-    errata: "[OGN-184] should read : [1], [E]: Return another friendly gear, unit, or facedown card to its owner's hand."
+    errata: "[OGN-181] should read : [1], [E]: Return another friendly gear, unit, or facedown card to its owner's hand."
   - cards:
     - OGN-184
-    errata: "[OGN-181] should read : [[E]: Move a friendly unit at a battlefield to its base."
+    errata: "[OGN-184] should read : [[E]: Move a friendly unit at a battlefield to its base."
   - cards:
     - OGN-194
     errata: "[OGN-194] should read : [GANKING] As you look at or reveal me from the top of your deck, you may banish me. If you do, you may play me for [A]."
