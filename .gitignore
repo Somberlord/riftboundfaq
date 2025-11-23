@@ -1,2 +1,5 @@
 app/__pycache__/*
 app/utils/__pycache__/*
+.venv
+__pycache__
+*.pyc

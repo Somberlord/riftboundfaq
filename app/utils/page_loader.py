@@ -1,10 +1,12 @@
 from flask import render_template, render_template_string, abort
 from app.utils.faq import FAQ
+import app.utils.md_renderer as md_rederer
 import app.utils.file_utils as file_utils
 import json
 from markdown_it import MarkdownIt
 
-md = MarkdownIt("gfm-like")
+#md = MarkdownIt("gfm-like")
+md = md_rederer.init_renderer()
 DEFAULT_LANGUAGE='en'
 
 NAVDATA_PAGE_NAME = 'page_name'
