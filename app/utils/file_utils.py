@@ -4,22 +4,33 @@ TYPE_GUIDE='guide'
 TYPE_SETS='sets'
 LANG_FOLDER='lang'
 
-BASE_PATH=os.path.join(os.getcwd(), 'app', 'templates')
+BASE_TEMPLATE_PATH=os.path.join(os.getcwd(), 'app', 'templates')
+BASE_DOCS_PATH=os.path.join(os.getcwd(), 'app', 'docs')
 BASE_DATA_PATH=os.path.join(os.getcwd(), 'app', 'data')
 
 def lang_folder_exists(lang):
-    lang_path = os.path.join(BASE_PATH, LANG_FOLDER, lang)
+    lang_path = os.path.join(BASE_TEMPLATE_PATH, LANG_FOLDER, lang)
     return os.path.isdir(lang_path)
 
 
 def template_file_exists(filepath):
-    complete_filepath = os.path.join(BASE_PATH, filepath)
+    complete_filepath = os.path.join(BASE_TEMPLATE_PATH, filepath)
     return os.path.isfile(complete_filepath)
+
+def docs_file_exists(filepath):
+    complete_filepath = os.path.join(BASE_DOCS_PATH, filepath)
+    return os.path.isfile(complete_filepath)
+
+def docs_file_contents(filepath):
+    complete_filepath = os.path.join(BASE_DOCS_PATH, filepath)
+    with open(complete_filepath) as f:
+        s = f.read()
+    return s
 
 
 def list_files(lang, type):
     if type == TYPE_GUIDE:
-        folder_path = os.path.join(BASE_PATH, LANG_FOLDER, lang, type)
+        folder_path = os.path.join(BASE_TEMPLATE_PATH, LANG_FOLDER, lang, type)
         return list_folder_files(folder_path)
     elif type == TYPE_SETS:
         folder_path = os.path.join(BASE_DATA_PATH, type)
