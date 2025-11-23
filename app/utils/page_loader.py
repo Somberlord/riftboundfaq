@@ -39,14 +39,15 @@ def render_guide_markdown(page_name, file_path, lang):
 
 def render_guide_html(page_name, file_path, lang):
     nav_data = get_pages(lang)
-    nav_data[NAVDATA_PAGE_NAME] = page_name
-    nav_data['folder'] = file_utils.TYPE_GUIDE
     title = page_name.replace('_',' ').title()
+    nav_data[NAVDATA_PAGE_NAME] = title
+    nav_data['folder'] = file_utils.TYPE_GUIDE
     return render_template(file_path, title=title, navlist=nav_data)
 
 def get_pages(lang):
     nav_data = dict()
-    nav_data[file_utils.TYPE_GUIDE] = file_utils.list_files(lang, file_utils.TYPE_GUIDE)
+    from app.data.navlist import guides
+    nav_data[file_utils.TYPE_GUIDE] = guides[lang]
     nav_data[file_utils.TYPE_SETS] = file_utils.list_files(lang, file_utils.TYPE_SETS)
     return nav_data
 
