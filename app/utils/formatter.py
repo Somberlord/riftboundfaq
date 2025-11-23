@@ -20,5 +20,5 @@ def replace_card_with_html(string: str, card_data):
     icon_str = f'<a href="https://cdn.piltoverarchive.com/cards/{ card_id }.webp" target="_blank" class="card-link-with-preview"><img class="might-icon" src="/static/images/zoom.webp" data-light="/static/images/zoom.webp" ' \
     f'data-dark="/static/images/zoom_darkmode.webp" alt="Zoom" style="height:1em; vertical-align:middle;">{inner_span}</a>'
     replace_str = f'<i>{card_title}</i> {icon_str}'
-    new_string = string.replace(f'[{card_data['id']}]', replace_str)
+    new_string = string.replace(f"[{card_data['id']}]", replace_str)
     return new_string
