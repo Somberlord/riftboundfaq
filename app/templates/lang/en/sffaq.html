@@ -1,0 +1,124 @@
+{% extends "lang/en/base.html" %}
+
+{% block content %}
+<div class="container my-4 themed-list-container">
+  <h2 class="mb-3">Spiritforged Judge FAQ - Community translation</h2>
+    <p>This is a community-made translation of the Spiritforged Judge FAQ. </p>
+    <p>Last Updated: 2025/12/19</p>
+    <p>Hello everyone! The new expansion “Soulforging Tempering” for Runic Arena: League of Legends Trading Card Game (hereafter Runic Arena) has been released.<br/>
+To promptly address questions regarding new rules and card effects, the Judge Team has compiled common issues and confirmed them one by one with the Design Team.</p>
+
+    <h4>⚠️ Important Notes</h4>
+    <ul>
+        <li>This document may be used as a basis for judge rulings, but it is not an official FAQ.</li>
+        <li>It covers two aspects:</li>
+        <ul>
+            <li>Card Text Adjustments – Some effects will be formally clarified in future official errata. Until then, the adjustments here apply.</li>
+            <li>Q&A – Examples of complex card interactions to illustrate rules interpretation.</li>
+        </ul>
+    </ul>
+
+    
+
+<p>This document reflects the latest core rules and designer responses.<br/>
+Until an official FAQ is released, judges may rely on this document for rulings, including in official events.<br/>
+After the official FAQ is published, the official FAQ takes precedence.<br/>
+Players will later be able to view updated card text and Q&A in the in-app card database.</p>
+
+<h3>Card Text Adjustments</h3>
+
+<p>Q: Does the effect of Bloodthirsty Dash persist into later rounds?<br/>
+A: No. The card text will be updated to explicitly say “this round only.”</p>
+
+<p>Q: Can Mighty Arm Kato target itself with its triggered ability?<br/>
+A: No. The text will be updated to specify “another friendly unit.”</p>
+
+<p>Q: When playing Sand Soldiers Arise, can I choose the Sand Soldier created by that card to become active?<br/>
+A: Yes—and you may only choose a Sand Soldier created by that card.<br/>
+This was a translation error and will be corrected to ensure legal resolution.</p>
+
+<h3>Common Rules Q&A</h3>
+
+<p>2.1 Timing of Scoring Points</p>
+
+<p>This occurs after all battle cleanup and derived cleanup are complete, but before control is established
+(between rules 444.1.a.3 and 444.2).</p>
+
+<p>Q: I have 6 points. My Draven – High Stakes wins a battle for the first time this round and conquers a battlefield. Do I immediately win (8-point format)?<br/>
+A: No. Draven’s ability gives the 7th point. The conquest score is converted into card draw (unless you already scored at all other battlefields).</p>
+
+<hr/>
+
+<p>2.2 What Counts as “During Battle”</p>
+
+<p>From the start of the battle spell duel until all battle cleanup finishes.</p>
+
+<p></p>Q: Draven is destroyed by Dark Blade during the battle spell duel. Do I still choose an opponent to gain 1 point?<br/>
+A: Yes.</p>
+
+<hr/>
+
+<p>2.3 “Cannot Score” Effects</p>
+
+<p>“Cannot score” only prevents the scoring action itself (Rule 448.1).<br/>
+It does not affect conquest, defense, related triggers, or card draw replacement for the final point.</p>
+
+<p>Q: I successfully defended, but Tianna Crownguard prevents scoring. Can I reduce the cost of Mega Yordle?<br/>
+A: Yes.</p>
+
+<p>Q1: I defended Battlefield A but scored no points due to Tianna. After destroying Tianna, can I conquer A this round?<br/>
+A: No.</p>
+
+<p>Q2: I already have 7 points. After destroying Tianna, can I conquer Battlefield A and win (8-point format)?<br/>
+A: Yes.</p>
+
+<p>Q: With 7 points, if I conquer another battlefield while Tianna controls A, do I draw a card instead?<br/>
+A: Yes.
+
+<hr/>
+
+<p>2.4 Copy Effects</p>
+
+<p>“Copy” applies only to a unit’s base text.<br/>
+It does not copy weapons, spells, or granted abilities.</p>
+
+<p>Examples:
+    <ul>
+        <li>Ornn with two Sver’s Song attachments has Spell Shield 6 → Yes</li>
+        <li>Azir with Sver’s Song can use his skill twice in one round → Yes</li>
+        <li>Effects granted by spells or equipment are not copied.</li>
+    </ul>
+</p>
+
+<p>Echoes</p>
+
+<p>Yes, each extra Echo cost can be reduced independently.</p>
+
+<p>Example: Ezreal – Prodigy reduces both Echo payments.</p>
+
+<hr/>
+
+<p>2.6 Cost of Tokens</p>
+
+<p>Tokens have a cost of 0 when referenced.</p>
+
+<p>Q: Can Back-Alley Thief destroy a “Coin” equipment token?<br/>
+A: Yes.</p>
+
+<p>Other Common Card Q&A (Selected Examples)
+    <ul>
+        <li>Guardian Angel cannot be replaced by destroying another unattached Guardian Angel, but can be replaced by Zhonya’s Hourglass.</li>
+        <li>Long Sword’s Equip ability does not gain Reaction.</li>
+        <li>Bellows Breath with Echo can damage multiple or repeated targets.</li>
+        <li>A battlefield controlled by a single enemy unit will still open a non-battle spell duel when Hostile Takeover resolves.</li>
+        <li>Multiple Echo choices count as separate selections.</li>
+        <li>Equipment remains attached after Seize Control, but ownership does not change.</li>
+        <li>Destroyed equipped units return equipment to the equipment controller’s base.</li>
+        <li>Choices for multi-mode spells or skills are made at confirmation, not resolution.</li>
+        <li>Effects that snapshot power use values at resolution time.</li>
+        <li>Tokens being played do not count as “playing a card” for cost reductions.</li>
+        <li>Copying, conquering, defending, recall timing, and exile interactions are clarified throughout
+    </ul>
+ </p>
+</div>
+{% endblock %}

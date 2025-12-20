@@ -49,6 +49,10 @@ def known_issues():
 def official_documents():
     return page_loader.render_static_page('docs', title='Official Riot Documents')
 
+@app.route('/sffaq')
+def spiritforged_faq():
+    return page_loader.render_static_page('sffaq', title='Spiritforged FAQ')
+
 @app.route('/sets/<rbset>')
 def rbset(rbset):
     return page_loader.render_set(rbset)
