@@ -15,10 +15,12 @@ Note that some cards and effects can cost *both* **Energy** and **Power**.
 ### __Relevant CRD Rules :__
 
 *130. Cost<br/>
-153. Runes<br/>
-157.2. Runes abilities<br/>
-158. Rune Pools<br/>
-605. Add*
+156. Runes<br/>
+160.2. Runes abilities<br/>
+162. Rune Pools<br/>
+416. Add*
 
-### __Going Further :__
-Hop on the Community Discord and Join the discussion.
+### __Dates :__
+
+Verified : 2025-12-21<br/>
+Updated : 2025-12-21

@@ -8,6 +8,9 @@ guides = {
         {"title": "Move", "link": "/move"},
         {"title": "Scoring", "link": "/scoring"},
         {"title": "Showdown", "link": "/showdown"},
+    ],
+    "fr": [
+        {"title": "Energy and Power", "link": "/fr/energy_and_power"},
     ]
     
 }
