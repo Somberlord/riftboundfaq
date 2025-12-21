@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" 
+      content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -35,29 +37,14 @@
     <div class="row">
       <!-- Sidebar visible à partir de md -->
       <nav id="sidebar" class="col-md-3 col-lg-2 d-none d-md-block sidebar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
-          <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#guidesCollapse" role="button" aria-expanded="false" aria-controls="guidesCollapse">
-              Guides
-              <span class="ms-1 guide-arrow" id="guideArrowDesktop">&#9654;</span>
-            </a>
-            <div class="collapse" id="guidesCollapse">
-              <ul class="navbar-nav ms-3">
-                {% for entry in navlist %}
-                  <li class="nav-item">
-                    <a class="nav-link{% if request.path == '/guide/' + entry %} active{% endif %}" href="/guide/{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </li>
-        </ul>
+        {% include 'lang/en/navbar.html' %}
       </nav>
 
       <main class="col-md-9 col-lg-10 p-4">
       <!-- Contenu principal -->
-      {% block content %}{% endblock %}
+        <div class="container my-4 themed-list-container">
+          {% block content %}{% endblock %}
+        </div>
       </main>
     </div>
   </div>
@@ -69,28 +56,15 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body sidebar">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
-          <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" data-bs-toggle="collapse" href="#guidesCollapseMobile" role="button" aria-expanded="false" aria-controls="guidesCollapseMobile">
-              Guides
-              <span class="ms-1 guide-arrow" id="guideArrowMobile">&#9654;</span>
-            </a>
-            <div class="collapse" id="guidesCollapseMobile">
-              <ul class="navbar-nav ms-3">
-                {% for entry in navlist %}
-                  <li class="nav-item">
-                    <a class="nav-link{% if request.path == '/guide/' + entry %} active{% endif %}" href="/guide/{{ entry }}">{{ entry.replace('_',' ').title() }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          </li>
-        </ul>
+        {% include 'lang/en/navbar.html' %}
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
 </body>
 <footer class="site-footer py-3">
   <div class="container">

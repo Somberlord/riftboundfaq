@@ -11,6 +11,7 @@ guides = {
     ],
     "fr": [
         {"title": "Energy and Power", "link": "/fr/energy_and_power"},
+        {"title": "Scoring", "link": "/fr/scoring"},
     ]
     
 }
