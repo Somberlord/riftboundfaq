@@ -10,6 +10,7 @@ guides = {
         {"title": "Showdown", "link": "/showdown"},
     ],
     "fr": [
+        {"title": "Capacités (Abilities)", "link": "/abilities"},
         {"title": "Déplacement (Move)", "link": "/fr/move"},
         {"title": "Energy and Power", "link": "/fr/energy_and_power"},
         {"title": "Scoring", "link": "/fr/scoring"},
