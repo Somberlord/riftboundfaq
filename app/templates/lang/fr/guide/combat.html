@@ -4,53 +4,53 @@
 <div class="container my-4 themed-list-container">
   <h2 class="mb-3">Combat</h2>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Combat occurs when an <strong>already controlled</strong> battlefield (BF) is contested.</li>
-    <li class="list-group-item">Combat can only occur when the chain is <strong>empty</strong>. When a unit contests a BF while there is a chain, combat is <strong>pending</strong> until the chain is empty.</li>
-    <li class="list-group-item">Only <strong>one</strong> combat can occur at a time. If two combats are pending, the turn player decides which combat to resolve first.</li>
-    <li class="list-group-item">Combat can only occur between units of <strong>exactly</strong> two players.
+    <li class="list-group-item">Le combat a lieu lorsqu’un champ de bataille (BF) déjà contrôlé est contesté.</li>
+    <li class="list-group-item">Le combat ne peut avoir lieu que lorsque la chaîne est <strong>vide</strong>. Lorsqu’une unité conteste un BF alors qu’il y a une chaîne, le combat est <strong>en attente</strong> (pending) jusqu’à ce que la chaîne soit vide.</li>
+    <li class="list-group-item">Un seul <strong>combat</strong> peut avoir lieu à la fois. Si deux combats sont en attente, le joueur actif choisit lequel résoudre en premier.</li>
+    <li class="list-group-item">Le combat ne peut se produire qu’entre des unités de <strong>exactement</strong> deux joueurs.
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Any attempt from a third player to move a unit into an existing combat is illegal.</li>
+        <li class="list-group-item">Toute tentative d’un troisième joueur de déplacer une unité dans un combat en cours est illégale.</li>
       </ul>
     </li>
   </ul>
 
-  <h3 class="mt-4 mb-2">Combat consists of three steps</h3>
+  <h3 class="mt-4 mb-2">Le combat se compose de trois étapes</h3>
 
-  <h4 class="mt-5 mb-1">The Showdown Step</h4>
-  <p>A <a href="/showdown">Showdown</a> occurs.</p>
+  <h4 class="mt-5 mb-1">L’étape du Duel (Showdown Step)</h4>
+  <p>Un <a href="/showdown">Duel</a> (Showdown) a lieu.</p>
 
-  <h4 class="mt-5 mb-1">The Damage Step</h4>
+  <h4 class="mt-5 mb-1">L’étape des Dégâts (Damage Step)</h4>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Sum the <img class="might-icon" src="static/images/might.webp" data-light="static/images/might.webp" data-dark="static/images/might_darkmode.webp" style="height:1em; vertical-align:middle;" alt="might"> of attacking and defending units.</li>
-    <li class="list-group-item">Distribute damage
+    <li class="list-group-item">Faites la somme des <img class="might-icon" src="static/images/might.webp" data-light="static/images/might.webp" data-dark="static/images/might_darkmode.webp" style="height:1em; vertical-align:middle;" alt="might"> des unités attaquantes et défensives.</li>
+    <li class="list-group-item">Distribuez les dégâts 
       <ul class="list-group themed-list mt-2">
-        <li class="list-group-item">Attacker announces damage distribution <strong>first</strong>, then defender.</li>
-        <li class="list-group-item">All <strong>requirements and restrictions</strong> must be met
+        <li class="list-group-item">L’attaquant annonce d’abord la répartition des dégâts, puis le défenseur.</li>
+        <li class="list-group-item">Toutes les <strong>conditions et restrictions</strong> (requirements and restrictions) doivent être respectées
           <ul class="list-group themed-list mt-1">
-            <li class="list-group-item">For example, units with <strong>Tank</strong> must be assigned damage first.</li>
-            <li class="list-group-item">If multiple units have the <strong>same restriction</strong>, the player assigning damage can choose the order.</li>
+            <li class="list-group-item">Par exemple, les unités avec <strong>Tank</strong> doivent recevoir des dégâts en premier.</li>
+            <li class="list-group-item">Si plusieurs unités ont la <strong>même restriction</strong>, le joueur assignant les dégâts peut choisir l’ordre.</li>
           </ul>
         </li>
-        <li class="list-group-item">A unit has to be assigned <strong>lethal damage</strong> before a player can assign damage to <strong>another</strong> unit.</li>
-        <li class="list-group-item">Players cannot <strong>over assign</strong> damage.</li>
-        <li class="list-group-item">Any <strong>excess damage</strong> will be assigned to the <strong>last unit</strong>.</li>
+        <li class="list-group-item">Une unité doit recevoir des <strong>dégâts létaux</strong> (lethal damage) avant qu’un joueur puisse assigner des dégâts à une <strong>autre</strong> unité.</li>
+        <li class="list-group-item">Les joueurs ne peuvent pas <strong>assigner trop de dégâts</strong>.</li>
+        <li class="list-group-item">Tout <strong>dégât excédentaire</strong> (excess damage) sera assigné à la <strong>dernière unité</strong>.</li>
       </ul>
     </li>
   </ul>
 
-  <h4 class="mt-5 mb-1">The Resolution Step</h4>
+  <h4 class="mt-5 mb-1">L’étape de Résolution (Resolution Step)</h4>
   <ul class="list-group themed-list mb-3">
-    <li class="list-group-item">Remove units with <strong>lethal damage</strong>.</li>
-    <li class="list-group-item">If <strong>both</strong> attacking and defending units remain at the BF, attacking units are <strong>recalled</strong> to base.</li>
-    <li class="list-group-item">If <strong>only</strong> attacking units remain, a point is <a href="/scoring">scored</a> and the BF is <strong>conquered</strong>.</li>
-    <li class="list-group-item">Contested status is cleared from the BF.</li>
-    <li class="list-group-item">Damage is cleared from all units at all locations.</li>
-    <li class="list-group-item">Cleanup is performed.</li>
+    <li class="list-group-item">Retirez les unités ayant subi des <strong>dégâts létaux</strong> (lethal damage).</li>
+    <li class="list-group-item">Si <strong>les unités attaquantes et défensives</strong> restent au BF, les unités attaquantes sont <strong>rappelées</strong> (recalled) à la base.</li>
+    <li class="list-group-item">Si <strong>seules</strong> les unités attaquantes restent, un point est <a href="/scoring">marqué</a> (scored) et le BF est <strong>conquis</strong> (conquered).</li>
+    <li class="list-group-item">Le statut contesté est retiré du BF.</li>
+    <li class="list-group-item">Les dégâts sont retirés de toutes les unités à tous les emplacements.</li>
+    <li class="list-group-item">Le nettoyage (cleanup) est effectué.</li>
   </ul>
 
-  <p><em>Edge Case:</em> It is possible to score as defender if a unit moved to the BF during an open showdown (e.g. with Zenith Blade). For this case, see <a href="https://discord.com/channels/1314690307811577887/1380255604148277369/1382030329132355826">here</a>.</p>
+  <p><em>Cas particulier :</em> Il est possible de marquer un point en tant que défenseur si une unité a été déplacée sur le BF pendant un duel ouvert (open showdown), par exemple avec Zenith Blade. Pour ce cas, voir <a href="https://discord.com/channels/1314690307811577887/1380255604148277369/1382030329132355826">ici</a>.</p>
 
-  <h3 class="mt-4 mb-2">Relevant CDR Rules:</h3>
+  <h3 class="mt-4 mb-2">Règles CRD pertinentes :</h3>
   <p><em>545. Showdown<br>620. Combat</em></p>
 </div>
 {% endblock %}
